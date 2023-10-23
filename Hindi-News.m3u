@@ -1,0 +1,22 @@
+#EXTM3U
+
+#EXTINF:-1 tvg-logo="https://static.abplive.in/wp-content/themes/abp-hindi/images/logo/hindiLogoD.png" group-title="News",ABP News
+https://abp-i.akamaihd.net/hls/live/765529/abphindi/masterhls_1564.m3u8
+#EXTINF:-1 tvg-logo="http://ddnews.gov.in/sites/all/themes/cmf/logo.png" group-title="News", DD News
+http://playhls.media.nic.in/live/ddnews-360p/index.m3u8
+#EXTINF:-1 tvg-logo="https://www.news1india.in/wp-content/uploads/2019/03/Final_Logo-e1554288803720.png" group-title="News", News 1 India
+http://123.249.76.157:10014/bysid/9
+#EXTINF:-1 tvg-logo="https://static.newsnation.in/images/newsnation-logo.png" group-title="News", News Nation
+https://hls.newsnation.in/NN_HTTP_LIVE/ngrp:mystream_all/chunklist_b2556060.m3u8
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/en/6/60/NewsWorldIndiaLogo.jpg" group-title="News", News World India
+http://123.249.76.157:10013/bysid/16
+#EXTINF:0 tvg-logo="https://upload.wikimedia.org/wikipedia/en/e/ed/NDTV_India.png" group-title="News", NDTV India
+https://ndtvstream-lh.akamaihd.net/i/ndtv_india_1@300634/master.m3u8
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/7/73/SaharaOne2010.png/300px-SaharaOne2010.png" group-title="News", Sahara One
+http://123.249.76.157:10020/bysid/1
+#EXTINF:-1 tvg-logo="https://quickcompanyin.s3.amazonaws.com/trademark/96361d104fa4093a.jpg" group-title="News",  Sahara Samay
+http://123.249.76.157:10020/bysid/3
+#EXTINF:-1 tvg-logo="http://www.samaylive.com/themes/sahara/images/samaylive.png" group-title="News", Sahara National
+http://123.249.76.157:10020/bysid/2
+#EXTINF:-1 tvg-logo="https://static.hindi.news18.com/ibnkhabar/uploads/2017/01/mainlogo_hindi_new.png" group-title="News", News 18 Hindi
+http://62.210.141.179:8000/ibrahim/123456/1204
