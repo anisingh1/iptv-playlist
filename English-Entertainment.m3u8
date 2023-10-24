@@ -1,9 +1,0 @@
-#EXTM3U
-#EXTINF:-1 tvg-id="ColorsInfinity.in" tvg-logo="https://i.imgur.com/a5uES9j.png" group-title="English Entertainment",Colors Infinity
-https://prod-sports-north-gm.jiocinema.com/bpk-tv/Colors_Infinity_HD_voot_MOB/Fallback/index.m3u8
-#EXTINF:-1 tvg-id="ComedyCentralIndia.in" tvg-logo="https://i.imgur.com/g0caQa2.png" group-title="English Entertainment",Comedy Central
-https://prod-sports-north-gm.jiocinema.com/bpk-tv/Comedy_Central_HD_voot_MOB/Fallback/index.m3u8
-#EXTINF:-1 tvg-id="FailArmyItaly.it" tvg-logo="https://i.imgur.com/t3IjyYJ.png" group-title="English Entertainment",Failarmy
-https://failarmy-international-it.samsung.wurl.tv/playlist.m3u8
-#EXTINF:-1 tvg-id="AVASeries.ir" tvg-logo="https://i.imgur.com/8AfAfZE.png" group-title="English Entertainment",AVA Series
-https://avaserieshls.wns.live/hls/stream.m3u8
