@@ -1,0 +1,9 @@
+#EXTM3U
+#EXTINF:-1 tvg-id="TVSClassicMovies.us" tvg-logo="https://i.imgur.com/st1xMsw.png" group-title="English Movies",TVS Classic Movies
+https://rpn1.bozztv.com/36bay2/gusa-tvsclassicmovies/index.m3u8
+#EXTINF:-1 tvg-id="TVSHorrorNetwork.us" tvg-logo="https://i.imgur.com/n0LAunC.png" group-title="English Movies",TVS Horror Network
+https://rpn1.bozztv.com/36bay2/gusa-tvshorror/index.m3u8
+#EXTINF:-1 tvg-id="TVSHollywoodHistory.us" tvg-logo="https://i.imgur.com/QtQGyMS.png" group-title="English Movies",TVS Hollywood History
+https://rpn1.bozztv.com/36bay2/gusa-tvshollywoohistory/mono.m3u8
+#EXTINF:-1 tvg-id="RakutenTVTopMoviesFrance.fr" tvg-logo="https://i.imgur.com/4fpher5.png" group-title="English Movies",Rakuten TV
+https://rakuten-topfree-7-eu.rakuten.wurl.tv/playlist.m3u8
