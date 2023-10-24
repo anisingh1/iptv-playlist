@@ -1,43 +1,43 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="AAJ TAK" tvg-logo="https://akm-img-a-in.tosshub.com/aajtak/resource/img/bemisaal-20-saal/at-hd-191x84.png"  group-title="Hindi News",Aaj Tak
+#EXTINF:-1 tvg-id="AAJTAK" tvg-logo="https://akm-img-a-in.tosshub.com/aajtak/resource/img/bemisaal-20-saal/at-hd-191x84.png"  group-title="Hindi News",Aaj Tak
 https://feeds.intoday.in/aajtak/api/master.m3u8
-#EXTINF:-1 tvg-id="ABPNews.in" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/ABP_News_logo.svg/512px-ABP_News_logo.svg.png" group-title="Hindi News",ABP News
+#EXTINF:-1 tvg-id="ABPNEWS" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/ABP_News_logo.svg/512px-ABP_News_logo.svg.png" group-title="Hindi News",ABP News
 https://abplivetv.akamaized.net/hls/live/2043010/hindi/master.m3u8
-#EXTINF:-1 tvg-id="TV9Bharatvarsh.in" tvg-logo="https://i.imgur.com/GEqUslW.png" group-title="Hindi News",TV9 Bharatvarsh
+#EXTINF:-1 tvg-id="TV9BHARATVARSH" tvg-logo="https://i.imgur.com/GEqUslW.png" group-title="Hindi News",TV9 Bharatvarsh
 https://dyjmyiv3bp2ez.cloudfront.net/pub-iotv9hinjzgtpe/liveabr/playlist.m3u8
-#EXTINF:-1 tvg-id="INDIA TV" tvg-logo="https://a.jsrdn.com/hls/23084/india-tv/logo_20220825_164753_68.png"  group-title="Hindi News",India TV
+#EXTINF:-1 tvg-id="INDIATV" tvg-logo="https://a.jsrdn.com/hls/23084/india-tv/logo_20220825_164753_68.png"  group-title="Hindi News",INDIA TV
 https://restv4-as.ott.kaltura.com/api_v3/service/assetFile/action/playManifest/partnerId/487/assetId/1325541/assetType/media/assetFileId/16471835/contextType/PLAYBACK/isAltUrl/False/a.m3u8
 #EXTINF:-1 tvg-id="REPUBLICBHARAT" tvg-logo="https://www.examsegg.com/wp-content/uploads/2021/02/republic-bharat-logo-e1613310592185.jpg"  group-title="Hindi News",Republic Bharat
 https://webliverb.republicworld.com/httppush/ottrb_republic_hindi/ottrb/master.m3u8?e=1651431600&h=f66a60a21c8b02a8690d98c6c5fda5bb
-#EXTINF:-1 tvg-id="NEWS 18 INDIA" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/News_18_India.png/220px-News_18_India.png"  group-title="Hindi News",News 18 India
+#EXTINF:-1 tvg-id="NEWS18INDIA" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/News_18_India.png/220px-News_18_India.png"  group-title="Hindi News",News 18 India
 https://nw18live.cdn.jio.com/bpk-tv/News18_India_NW18_MOB/output01/index.m3u8?__hdnea__=st=1668078327~exp=1668164727~acl=/*~hmac=511e50c537d634de539610771757472844e355fa465ca859dbe44ffa191eec09
-#EXTINF:-1 tvg-id="ZEE NEWS" tvg-logo="http://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/wdPs8bpF.png"  group-title="Hindi News",Zee News
+#EXTINF:-1 tvg-id="ZEENEWS" tvg-logo="http://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/wdPs8bpF.png"  group-title="Hindi News",Zee News
 https://restv4-as.ott.kaltura.com/api_v3/service/assetFile/action/playManifest/partnerId/487/assetId/653498/assetType/media/assetFileId/15920426/contextType/PLAYBACK/isAltUrl/False/a.m3u8
-#EXTINF:-1 tvg-id="TIMES NOW NAVBHARAT" tvg-logo="https://i.imgur.com/kSCozXg.png"  group-title="Hindi News",Times Now Navbharat
+#EXTINF:-1 tvg-id="TIMESNOWNAVBHARAT" tvg-logo="https://i.imgur.com/kSCozXg.png"  group-title="Hindi News",Times Now Navbharat
 https://restv4-as.ott.kaltura.com/api_v3/service/assetFile/action/playManifest/partnerId/487/assetId/1283530/assetType/media/assetFileId/15825341/contextType/PLAYBACK/isAltUrl/False/a.m3u8
-#EXTINF:-1 tvg-id="NEWS NATION" tvg-logo="https://i.imgur.com/9xeIWqm.png"  group-title="Hindi News",News Nation
+#EXTINF:-1 tvg-id="NEWSNATION" tvg-logo="https://i.imgur.com/9xeIWqm.png"  group-title="Hindi News",News Nation
 https://restv4-as.ott.kaltura.com/api_v3/service/assetFile/action/playManifest/partnerId/487/assetId/678533/assetType/media/assetFileId/15558311/contextType/PLAYBACK/isAltUrl/False/a.m3u8
 
 #EXTINF:-1 tvg-id="ALJAZEERA" tvg-logo="https://c.tenor.com/5aaQW6UiR9sAAAAC/al-jazeera-news-channel-logo.gif" group-title="English News",Al Jazeera
 https://live-hls-web-aje.getaj.net/AJE/index.m3u8
-#EXTINF:-1 tvg-id="RT TV" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/RT_TV.png" group-title="English News",RT TV
+#EXTINF:-1 tvg-id="RTTV" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/RT_TV.png" group-title="English News",RT TV
 https://rt-glb.rttv.com/live/rtnews/playlist.m3u8
-#EXTINF:-1 tvg-id="INDIA TODAY" tvg-logo="http://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/GwmEMW18.png" group-title="English News",India Today
+#EXTINF:-1 tvg-id="INDIATODAY" tvg-logo="http://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/GwmEMW18.png" group-title="English News",INDIA TODAY
 https://feeds.intoday.in/hltapps/api/master.m3u8
-#EXTINF:-1 tvg-id="REPUBLIC TV" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/c/c0/Republic_TV.png" group-title="English News",Republic TV
+#EXTINF:-1 tvg-id="REPUBLICTV" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/c/c0/Republic_TV.png" group-title="English News",REPUBLIC TV
 https://restv4-as.ott.kaltura.com/api_v3/service/assetFile/action/playManifest/partnerId/487/assetId/789812/assetType/media/assetFileId/8035286/contextType/PLAYBACK/isAltUrl/False/a.m3u8
-#EXTINF:-1 tvg-id="TRT WORLD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/TRT_World_logo.svg/2560px-TRT_World_logo.svg.png" group-title="English News",TRT World
+#EXTINF:-1 tvg-id="TRTWORLD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/TRT_World_logo.svg/2560px-TRT_World_logo.svg.png" group-title="English News",TRT World
 https://tv-trtworld.live.trt.com.tr/master.m3u8
 
-#EXTINF:-1 tvg-id="ColorsCineplex.in" tvg-logo="https://i.imgur.com/Hvvjfk5.png" group-title="Hindi Movies",Colors Cineplex
+#EXTINF:-1 tvg-id="ColorsCineplex" tvg-logo="https://i.imgur.com/Hvvjfk5.png" group-title="Hindi Movies",Colors Cineplex
 https://prod-sports-north-gm.jiocinema.com/bpk-tv/Colors_Cineplex_voot_MOB/Fallback/index.m3u8
-#EXTINF:-1 tvg-id="ColorsCineplexBollywood.in" tvg-logo="https://i.imgur.com/EbHSQAJ.png" group-title="Hindi Movies",Colors Cineplex Bollywood
+#EXTINF:-1 tvg-id="ColorsCineplexBollywood" tvg-logo="https://i.imgur.com/EbHSQAJ.png" group-title="Hindi Movies",Colors Cineplex Bollywood
 https://prod-sports-north-gm.jiocinema.com/bpk-tv/Colors_Cineplex_Bollywood_voot_MOB/Fallback/index.m3u8
-#EXTINF:-1 tvg-id="ColorsCineplexSuperhits.in" tvg-logo="https://i.ibb.co/KbXhstz/Screenshot-20230610-130415.jpg" group-title="Hindi Movies",Colors Cineplex Superhits
+#EXTINF:-1 tvg-id="ColorsCineplexSuperhits" tvg-logo="https://i.ibb.co/KbXhstz/Screenshot-20230610-130415.jpg" group-title="Hindi Movies",Colors Cineplex Superhits
 https://prod-sports-north-gm.jiocinema.com/bpk-tv/Rishtey_Cineplex_voot_MOB/Fallback/index.m3u8
-#EXTINF:-1 tvg-id="BOLLYWOOD HD" tvg-logo="https://ocdn.eu/ptv2-images/logo-migrated/bollywood-hd.jpg"  group-title="Hindi Movies",Bollywood HD
+#EXTINF:-1 tvg-id="BOLLYWOODHD" tvg-logo="https://ocdn.eu/ptv2-images/logo-migrated/bollywood-hd.jpg"  group-title="Hindi Movies",Bollywood HD
 https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/bollywood-hd/manifest.m3u8
-#EXTINF:-1 tvg-id="BOLLYWOOD CLASSIC HD" tvg-logo="https://a.jsrdn.com/hls/23077/bollywood-classic/logo_20220801_200458_68.png"  group-title="Hindi Movies",Bollywood Classic HD
+#EXTINF:-1 tvg-id="BOLLYWOODCLASSICHD" tvg-logo="https://a.jsrdn.com/hls/23077/bollywood-classic/logo_20220801_200458_68.png"  group-title="Hindi Movies",Bollywood Classic HD
 https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/bollywood-classic/manifest.m3u8
 
 #EXTINF:-1 tvg-id="TVSClassicMovies.us" tvg-logo="https://i.imgur.com/st1xMsw.png" group-title="English Movies",TVS Classic Movies
@@ -49,30 +49,26 @@ https://rpn1.bozztv.com/36bay2/gusa-tvshollywoohistory/mono.m3u8
 #EXTINF:-1 tvg-id="RakutenTVTopMoviesFrance.fr" tvg-logo="https://i.imgur.com/4fpher5.png" group-title="English Movies",Rakuten TV
 https://rakuten-topfree-7-eu.rakuten.wurl.tv/playlist.m3u8
 
-#EXTINF:-1 tvg-id="Colors.in" tvg-logo="https://i.imgur.com/M8uCJ0D.png" group-title="Hindi Entertainment",Colors
+#EXTINF:-1 tvg-id="Colors" tvg-logo="https://i.imgur.com/M8uCJ0D.png" group-title="Hindi Entertainment",Colors
 https://prod-sports-north-gm.jiocinema.com/bpk-tv/Colors_HD_voot_MOB/Fallback/index.m3u8
-#EXTINF:-1 tvg-id="ColorsRishteyAsia.in" tvg-logo="https://i.imgur.com/YKWfMZo.png" group-title="Hindi Entertainment",Colors Rishtey
+#EXTINF:-1 tvg-id="ColorsRishteyAsia" tvg-logo="https://i.imgur.com/YKWfMZo.png" group-title="Hindi Entertainment",Colors Rishtey
 https://prod-sports-north-gm.jiocinema.com/bpk-tv/Colors_Rishtey_voot_MOB/Fallback/index.m3u8
 
-#EXTINF:-1 tvg-id="ColorsInfinity.in" tvg-logo="https://i.imgur.com/a5uES9j.png" group-title="English Entertainment",Colors Infinity
+#EXTINF:-1 tvg-id="ColorsInfinity" tvg-logo="https://i.imgur.com/a5uES9j.png" group-title="English Entertainment",Colors Infinity
 https://prod-sports-north-gm.jiocinema.com/bpk-tv/Colors_Infinity_HD_voot_MOB/Fallback/index.m3u8
-#EXTINF:-1 tvg-id="ComedyCentralIndia.in" tvg-logo="https://i.imgur.com/g0caQa2.png" group-title="English Entertainment",Comedy Central
+#EXTINF:-1 tvg-id="ComedyCentralIndia" tvg-logo="https://i.imgur.com/g0caQa2.png" group-title="English Entertainment",Comedy Central
 https://prod-sports-north-gm.jiocinema.com/bpk-tv/Comedy_Central_HD_voot_MOB/Fallback/index.m3u8
-#EXTINF:-1 tvg-id="FailArmyItaly.it" tvg-logo="https://i.imgur.com/t3IjyYJ.png" group-title="English Entertainment",Failarmy
-https://failarmy-international-it.samsung.wurl.tv/playlist.m3u8
-#EXTINF:-1 tvg-id="AVASeries.ir" tvg-logo="https://i.imgur.com/8AfAfZE.png" group-title="English Entertainment",AVA Series
-https://avaserieshls.wns.live/hls/stream.m3u8
 
-#EXTINF:-1 tvg-id="MTVBeats.in" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/MTV_2021_%28brand_version%29.svg/512px-MTV_2021_%28brand_version%29.svg.png" group-title="Hindi Music",MTV Beats
+#EXTINF:-1 tvg-id="MTVBeats" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/MTV_2021_%28brand_version%29.svg/512px-MTV_2021_%28brand_version%29.svg.png" group-title="Hindi Music",MTV Beats
 https://prod-sports-north-gm.jiocinema.com/bpk-tv/MTV_Beats_HD_voot_MOB/Fallback/index.m3u8
 #EXTINF:-1 tvg-id="9XM" tvg-logo="https://www.9xm.in/wp-content/uploads/2016/07/mob-logo-1.png"  group-title="Hindi Music",9XM
 https://restv4-as.ott.kaltura.com/api_v3/service/assetFile/action/playManifest/partnerId/487/assetId/816390/assetType/media/assetFileId/15074634/contextType/PLAYBACK/isAltUrl/False/ks/djJ8NDg3fIZbQL8RDGvI46D8Be04c3G3Qu5CpWmmVQ-ZXo1MUR7LRhJFAG6vozaM0ge6ZKFAo8-gHmGr02RYu9GpCvAicGvLto51-vNz2E4swWCECj48V3kQKdmDYn0C6oJyc2siTG-7yi99fvCAwm6_OvF5jL62fSP8XSBqHKIHOSqMn0iFsV-uExs1JqrbRXjhiPSpK00rSMQbYulMLJTg8yt2Rp0rkxiSVCjvblTTa-ZRbi3oeLGh1NZOvm6N35WuZae_8sjL2vZPaqdWn6zkK8aHO9QEk4KvA78-qdKIAU02M2KfkzcOi8xDAE6YLMNqBMTo5YJFGTjNOyVrTXDDyMN5yHBjXKSNErK1yq44aDcAU3ExasnFTcirtNkx2X1oQG2rntTDnXwO4DWGy0Tvfd_Cv4wB4aBFagFrecP8eFuniFr3/a.m3u8?playSessionId=4f053758-ba3c-e466-48d8-b9ce0611a7f0:a18550f6-129a-709c-aa8b-388fb7bdcd47&referrer=aHR0cHM6Ly93d3cud2F0Y2hvLmNvbS93YXRjaC9jaGFubmVsLzl4bS84MTYzOTA=&clientTag=html5:v7.42
 
-#EXTINF:-1 tvg-id="NickHDPlus.in" tvg-logo="https://i.imgur.com/nJPbTet.png" group-title="Kids",Nick HD+
+#EXTINF:-1 tvg-id="NickHDPlus" tvg-logo="https://i.imgur.com/nJPbTet.png" group-title="Kids",Nick HD+
 https://prod-sports-north-gm.jiocinema.com/bpk-tv/Nick_HD_Plus_voot_MOB/Fallback/index.m3u8
-#EXTINF:-1 tvg-id="NickJrIndia.in" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Nick_Jr._logo_2009.svg/512px-Nick_Jr._logo_2009.svg.png" group-title="Kids",Nick Jr
+#EXTINF:-1 tvg-id="NickJrIndia" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Nick_Jr._logo_2009.svg/512px-Nick_Jr._logo_2009.svg.png" group-title="Kids",Nick Jr
 https://prod-sports-north-gm.jiocinema.com/bpk-tv/Nick_Junior_voot_MOB/Fallback/index.m3u8
-#EXTINF:-1 tvg-id="NickelodeonSonic.in" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Nickelodeon_Sonic_logo.png/512px-Nickelodeon_Sonic_logo.png" group-title="Kids",Nickelodeon Sonic Hindi
+#EXTINF:-1 tvg-id="NickelodeonSonic" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Nickelodeon_Sonic_logo.png/512px-Nickelodeon_Sonic_logo.png" group-title="Kids",Sonic Nickelodeon
 https://prod-sports-north-gm.jiocinema.com/bpk-tv/Sonic_Nickelodeon_voot_MOB/Fallback/index.m3u8
 #EXTINF:-1 tvg-id="GUBBARE" tvg-logo="https://www.epicon.in/img/gubbare-logo.png"  group-title="Kids",Gubbare
 https://epiconvh.s.llnwi.net/gubbare/master.m3u8
