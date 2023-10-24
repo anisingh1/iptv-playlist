@@ -1,5 +1,5 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="AAJ TAK" tvg-logo="http://sgdccdnems04.cdnsrv.jio.com/jiotv.catchup.cdn.jio.com/dare_images/images/Aaj_Tak.png"  group-title="Hindi News",Aaj Tak
+#EXTINF:-1 tvg-id="AAJ TAK" tvg-logo="https://akm-img-a-in.tosshub.com/aajtak/resource/img/bemisaal-20-saal/at-hd-191x84.png"  group-title="Hindi News",Aaj Tak
 https://feeds.intoday.in/aajtak/api/master.m3u8
 #EXTINF:-1 tvg-id="ABPNews.in" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/ABP_News_logo.svg/512px-ABP_News_logo.svg.png" group-title="Hindi News",ABP News
 https://abplivetv.akamaized.net/hls/live/2043010/hindi/master.m3u8
@@ -13,12 +13,10 @@ https://webliverb.republicworld.com/httppush/ottrb_republic_hindi/ottrb/master.m
 https://nw18live.cdn.jio.com/bpk-tv/News18_India_NW18_MOB/output01/index.m3u8?__hdnea__=st=1668078327~exp=1668164727~acl=/*~hmac=511e50c537d634de539610771757472844e355fa465ca859dbe44ffa191eec09
 #EXTINF:-1 tvg-id="ZEE NEWS" tvg-logo="http://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/wdPs8bpF.png"  group-title="Hindi News",Zee News
 https://restv4-as.ott.kaltura.com/api_v3/service/assetFile/action/playManifest/partnerId/487/assetId/653498/assetType/media/assetFileId/15920426/contextType/PLAYBACK/isAltUrl/False/a.m3u8
-#EXTINF:-1 tvg-id="TIMES NOW NAVBHARAT" tvg-logo="http://snoidcdnems02.cdnsrv.jio.com/jiotv.catchup.cdn.jio.com/dare_images/images/Times_Now_Navbharat.png"  group-title="Hindi News",Times Now Navbharat
+#EXTINF:-1 tvg-id="TIMES NOW NAVBHARAT" tvg-logo="https://i.imgur.com/kSCozXg.png"  group-title="Hindi News",Times Now Navbharat
 https://restv4-as.ott.kaltura.com/api_v3/service/assetFile/action/playManifest/partnerId/487/assetId/1283530/assetType/media/assetFileId/15825341/contextType/PLAYBACK/isAltUrl/False/a.m3u8
-#EXTINF:-1 tvg-id="NEWS NATION" tvg-logo="http://snoidcdnems02.cdnsrv.jio.com/jiotv.catchup.cdn.jio.com/dare_images/images/News_Nation.png"  group-title="Hindi News",News Nation
+#EXTINF:-1 tvg-id="NEWS NATION" tvg-logo="https://i.imgur.com/9xeIWqm.png"  group-title="Hindi News",News Nation
 https://restv4-as.ott.kaltura.com/api_v3/service/assetFile/action/playManifest/partnerId/487/assetId/678533/assetType/media/assetFileId/15558311/contextType/PLAYBACK/isAltUrl/False/a.m3u8
-#EXTINF:-1 tvg-id="FirstIndiaNews.in" tvg-logo="https://i.imgur.com/MUTe7cu.png" group-title="Hindi News",First India News
-https://xlbor37ydvaj-hls-live.wmncdn.net/firstindianewstv1/live.stream/index.m3u8
 
 #EXTINF:-1 tvg-id="ALJAZEERA" tvg-logo="https://c.tenor.com/5aaQW6UiR9sAAAAC/al-jazeera-news-channel-logo.gif" group-title="English News",Al Jazeera
 https://live-hls-web-aje.getaj.net/AJE/index.m3u8
@@ -44,7 +42,7 @@ https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26
 
 #EXTINF:-1 tvg-id="Colors.in" tvg-logo="https://i.imgur.com/M8uCJ0D.png" group-title="Hindi Entertainment",Colors
 https://prod-sports-north-gm.jiocinema.com/bpk-tv/Colors_HD_voot_MOB/Fallback/index.m3u8
-#EXTINF:-1 tvg-id="ColorsRishteyAsia.in" tvg-logo="https://i.imgur.com/YKWfMZo.png" group-title="Undefined",Colors Rishtey
+#EXTINF:-1 tvg-id="ColorsRishteyAsia.in" tvg-logo="https://i.imgur.com/YKWfMZo.png" group-title="Hindi Entertainment",Colors Rishtey
 https://prod-sports-north-gm.jiocinema.com/bpk-tv/Colors_Rishtey_voot_MOB/Fallback/index.m3u8
 
 #EXTINF:-1 tvg-id="ColorsInfinity.in" tvg-logo="https://i.imgur.com/a5uES9j.png" group-title="English Entertainment",Colors Infinity
