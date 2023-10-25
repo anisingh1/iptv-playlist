@@ -1,8 +1,6 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="AAJ TAK" tvg-logo="https://akm-img-a-in.tosshub.com/aajtak/resource/img/bemisaal-20-saal/at-hd-191x84.png"  group-title="Hindi News",Aaj Tak
 https://feeds.intoday.in/aajtak/api/master.m3u8
-#EXTINF:-1 tvg-id="AAJ TAK 2" tvg-logo="https://akm-img-a-in.tosshub.com/aajtak/resource/img/bemisaal-20-saal/at-hd-191x84.png"  group-title="Hindi News",Aaj Tak 2
-https://aajtakhdlive-amd.akamaized.net/hls/live/2014415/aajtakhd/aajtakhdlive/live_720p/chunks.m3u8
 #EXTINF:-1 tvg-id="ABPNews.in" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/ABP_News_logo.svg/512px-ABP_News_logo.svg.png" group-title="Hindi News",ABP News
 https://abplivetv.akamaized.net/hls/live/2043010/hindi/master.m3u8
 #EXTINF:-1 tvg-id="TV9Bharatvarsh.in" tvg-logo="https://i.imgur.com/GEqUslW.png" group-title="Hindi News",TV9 Bharatvarsh
@@ -44,8 +42,6 @@ https://rpn1.bozztv.com/36bay2/gusa-tvsclassicmovies/index.m3u8
 https://rpn1.bozztv.com/36bay2/gusa-tvshorror/index.m3u8
 #EXTINF:-1 tvg-id="TVSHollywoodHistory.us" tvg-logo="https://i.imgur.com/QtQGyMS.png" group-title="English Movies",TVS Hollywood History
 https://rpn1.bozztv.com/36bay2/gusa-tvshollywoohistory/mono.m3u8
-#EXTINF:-1 tvg-id="RakutenTVTopMoviesFrance.fr" tvg-logo="https://i.imgur.com/4fpher5.png" group-title="English Movies",Rakuten TV
-https://rakuten-topfree-7-eu.rakuten.wurl.tv/playlist.m3u8
 
 #EXTINF:-1 tvg-id="Colors.in" tvg-logo="https://i.imgur.com/M8uCJ0D.png" group-title="Hindi Entertainment",Colors
 https://prod-sports-north-gm.jiocinema.com/bpk-tv/Colors_HD_voot_MOB/Fallback/index.m3u8
@@ -72,12 +68,5 @@ https://prod-sports-north-gm.jiocinema.com/bpk-tv/Sonic_Nickelodeon_voot_MOB/Fal
 https://epiconvh.s.llnwi.net/gubbare/master.m3u8
 #EXTINF:-1 tvg-id="DiscoveryKids" tvg-logo="https://i.imgur.com/swM1L4e.png" group-title="Kids",Discovery kids
 https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg01448-samsungin-discoverykids-samsungin/playlist.m3u8
-#EXTINF:-1 tvg-id="CartoonNetwork" tvg-logo=”https://1000logos.net/wp-content/uploads/2016/10/Cartoon-Network-logo.jpg" group-title="Kids",Cartoon Network
-https://playout.cdn.cartoonnetwork.com.br/playout_02/playlist-720p.m3u8
-#EXTINF:-1 tvg-id="PBSKIDS" tvg-logo="https://www.epicon.in/img/gubbare-logo.png" group-title="Kids",PBS KIDS
+#EXTINF:-1 tvg-id="PBSKIDS" tvg-logo="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F287456388693335838%2F&psig=AOvVaw26fU2u5rlCeNkeSw7WI7vS&ust=1698345393725000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCJjM-eDrkYIDFQAAAAAdAAAAABAE" group-title="Kids",PBS KIDS
 https://2-fss-2.streamhoster.com/pl_140/amlst:200914-1298290/playlist.m3u8?DVR
-
-#EXTINF:-1 tvg-id="ANIMALPLANET" tvg-logo="https://i.imgur.com/86jLO7q.png" group-title="Science",Animal Planet
-https://food-dlvr-ott.akamaized.net/primary/3/def27b3dd6854290bc7f42daa93c65ea/index_15.m3u8
-#EXTINF:-1 tvg-id="DiscoveryScience" tvg-logo="https://s6.gifyu.com/images/imagecd8ecb4abf754cde.png" group-title="Science",Discovery Science
-https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg01448-samsungin-discoverysciin-samsungin/playlist.m3u8
