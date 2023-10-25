@@ -1,6 +1,8 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="AAJ TAK" tvg-logo="https://akm-img-a-in.tosshub.com/aajtak/resource/img/bemisaal-20-saal/at-hd-191x84.png"  group-title="Hindi News",Aaj Tak
 https://feeds.intoday.in/aajtak/api/master.m3u8
+#EXTINF:-1 tvg-id="AAJ TAK 2" tvg-logo="https://akm-img-a-in.tosshub.com/aajtak/resource/img/bemisaal-20-saal/at-hd-191x84.png"  group-title="Hindi News",Aaj Tak 2
+https://aajtakhdlive-amd.akamaized.net/hls/live/2014415/aajtakhd/aajtakhdlive/live_720p/chunks.m3u8
 #EXTINF:-1 tvg-id="ABPNews.in" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/ABP_News_logo.svg/512px-ABP_News_logo.svg.png" group-title="Hindi News",ABP News
 https://abplivetv.akamaized.net/hls/live/2043010/hindi/master.m3u8
 #EXTINF:-1 tvg-id="TV9Bharatvarsh.in" tvg-logo="https://i.imgur.com/GEqUslW.png" group-title="Hindi News",TV9 Bharatvarsh
@@ -58,7 +60,7 @@ https://prod-sports-north-gm.jiocinema.com/bpk-tv/Comedy_Central_HD_voot_MOB/Fal
 #EXTINF:-1 tvg-id="MTVBeats.in" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/MTV_2021_%28brand_version%29.svg/512px-MTV_2021_%28brand_version%29.svg.png" group-title="Hindi Music",MTV Beats
 https://prod-sports-north-gm.jiocinema.com/bpk-tv/MTV_Beats_HD_voot_MOB/Fallback/index.m3u8
 #EXTINF:-1 tvg-id="9XM" tvg-logo="https://www.9xm.in/wp-content/uploads/2016/07/mob-logo-1.png"  group-title="Hindi Music",9XM
-https://restv4-as.ott.kaltura.com/api_v3/service/assetFile/action/playManifest/partnerId/487/assetId/816390/assetType/media/assetFileId/15074634/contextType/PLAYBACK/isAltUrl/False/ks/djJ8NDg3fIZbQL8RDGvI46D8Be04c3G3Qu5CpWmmVQ-ZXo1MUR7LRhJFAG6vozaM0ge6ZKFAo8-gHmGr02RYu9GpCvAicGvLto51-vNz2E4swWCECj48V3kQKdmDYn0C6oJyc2siTG-7yi99fvCAwm6_OvF5jL62fSP8XSBqHKIHOSqMn0iFsV-uExs1JqrbRXjhiPSpK00rSMQbYulMLJTg8yt2Rp0rkxiSVCjvblTTa-ZRbi3oeLGh1NZOvm6N35WuZae_8sjL2vZPaqdWn6zkK8aHO9QEk4KvA78-qdKIAU02M2KfkzcOi8xDAE6YLMNqBMTo5YJFGTjNOyVrTXDDyMN5yHBjXKSNErK1yq44aDcAU3ExasnFTcirtNkx2X1oQG2rntTDnXwO4DWGy0Tvfd_Cv4wB4aBFagFrecP8eFuniFr3/a.m3u8?playSessionId=4f053758-ba3c-e466-48d8-b9ce0611a7f0:a18550f6-129a-709c-aa8b-388fb7bdcd47&referrer=aHR0cHM6Ly93d3cud2F0Y2hvLmNvbS93YXRjaC9jaGFubmVsLzl4bS84MTYzOTA=&clientTag=html5:v7.42
+https://d2q8p4pe5spbak.cloudfront.net/bpk-tv/9XM/9XM.isml/index.m3u8
 
 #EXTINF:-1 tvg-id="NickHDPlus.in" tvg-logo="https://i.imgur.com/nJPbTet.png" group-title="Kids",Nick HD+
 https://prod-sports-north-gm.jiocinema.com/bpk-tv/Nick_HD_Plus_voot_MOB/Fallback/index.m3u8
@@ -66,5 +68,16 @@ https://prod-sports-north-gm.jiocinema.com/bpk-tv/Nick_HD_Plus_voot_MOB/Fallback
 https://prod-sports-north-gm.jiocinema.com/bpk-tv/Nick_Junior_voot_MOB/Fallback/index.m3u8
 #EXTINF:-1 tvg-id="NickelodeonSonic.in" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Nickelodeon_Sonic_logo.png/512px-Nickelodeon_Sonic_logo.png" group-title="Kids",Sonic Nickelodeon
 https://prod-sports-north-gm.jiocinema.com/bpk-tv/Sonic_Nickelodeon_voot_MOB/Fallback/index.m3u8
-#EXTINF:-1 tvg-id="GUBBARE" tvg-logo="https://www.epicon.in/img/gubbare-logo.png"  group-title="Kids",Gubbare
+#EXTINF:-1 tvg-id="GUBBARE" tvg-logo="https://www.epicon.in/img/gubbare-logo.png" group-title="Kids",Gubbare
 https://epiconvh.s.llnwi.net/gubbare/master.m3u8
+#EXTINF:-1 tvg-id="DiscoveryKids" tvg-logo="https://i.imgur.com/swM1L4e.png" group-title="Kids",Discovery kids
+https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg01448-samsungin-discoverykids-samsungin/playlist.m3u8
+#EXTINF:-1 tvg-id="CartoonNetwork" tvg-logo=”https://1000logos.net/wp-content/uploads/2016/10/Cartoon-Network-logo.jpg" group-title="Kids",Cartoon Network
+https://playout.cdn.cartoonnetwork.com.br/playout_02/playlist-720p.m3u8
+#EXTINF:-1 tvg-id="PBSKIDS" tvg-logo="https://www.epicon.in/img/gubbare-logo.png" group-title="Kids",PBS KIDS
+https://2-fss-2.streamhoster.com/pl_140/amlst:200914-1298290/playlist.m3u8?DVR
+
+#EXTINF:-1 tvg-id="ANIMALPLANET" tvg-logo="https://i.imgur.com/86jLO7q.png" group-title="Science",Animal Planet
+https://food-dlvr-ott.akamaized.net/primary/3/def27b3dd6854290bc7f42daa93c65ea/index_15.m3u8
+#EXTINF:-1 tvg-id="DiscoveryScience" tvg-logo="https://s6.gifyu.com/images/imagecd8ecb4abf754cde.png" group-title="Science",Discovery Science
+https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg01448-samsungin-discoverysciin-samsungin/playlist.m3u8
