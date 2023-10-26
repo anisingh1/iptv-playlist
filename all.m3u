@@ -68,5 +68,5 @@ https://prod-sports-north-gm.jiocinema.com/bpk-tv/Sonic_Nickelodeon_voot_MOB/Fal
 https://epiconvh.s.llnwi.net/gubbare/master.m3u8
 #EXTINF:-1 tvg-id="DiscoveryKids" tvg-logo="https://i.imgur.com/swM1L4e.png" group-title="Kids",Discovery kids
 https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg01448-samsungin-discoverykids-samsungin/playlist.m3u8
-#EXTINF:-1 tvg-id="PBSKIDS" tvg-logo="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F287456388693335838%2F&psig=AOvVaw26fU2u5rlCeNkeSw7WI7vS&ust=1698345393725000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCJjM-eDrkYIDFQAAAAAdAAAAABAE" group-title="Kids",PBS KIDS
+#EXTINF:-1 tvg-id="PBSKIDS" tvg-logo="https://i.imgur.com/ambc9le.png" group-title="Kids",PBS KIDS
 https://2-fss-2.streamhoster.com/pl_140/amlst:200914-1298290/playlist.m3u8?DVR
