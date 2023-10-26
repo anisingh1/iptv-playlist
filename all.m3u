@@ -42,6 +42,10 @@ https://rpn1.bozztv.com/36bay2/gusa-tvsclassicmovies/index.m3u8
 https://rpn1.bozztv.com/36bay2/gusa-tvshorror/index.m3u8
 #EXTINF:-1 tvg-id="TVSHollywoodHistory.us" tvg-logo="https://i.imgur.com/QtQGyMS.png" group-title="English Movies",TVS Hollywood History
 https://rpn1.bozztv.com/36bay2/gusa-tvshollywoohistory/mono.m3u8
+#EXTINF:-1 tvg-id="MovieSphere.us" tvg-logo="https://i.imgur.com/h1ejU90.png" group-title="English Movies",MovieSphere
+https://moviesphere-plex.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="RakutenTVActionMoviesUK.uk" tvg-logo="https://i.imgur.com/uMcwx2p.jpg" group-title="English Movies",Rakuten TV
+https://rakuten-actionmovies-1-eu.rakuten.wurl.tv/playlist.m3u8
 
 #EXTINF:-1 tvg-id="Colors.in" tvg-logo="https://i.imgur.com/M8uCJ0D.png" group-title="Hindi Entertainment",Colors
 https://prod-sports-north-gm.jiocinema.com/bpk-tv/Colors_HD_voot_MOB/Fallback/index.m3u8
@@ -70,3 +74,6 @@ https://epiconvh.s.llnwi.net/gubbare/master.m3u8
 https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg01448-samsungin-discoverykids-samsungin/playlist.m3u8
 #EXTINF:-1 tvg-id="PBSKIDS" tvg-logo="https://i.imgur.com/ambc9le.png" group-title="Kids",PBS KIDS
 https://2-fss-2.streamhoster.com/pl_140/amlst:200914-1298290/playlist.m3u8?DVR
+
+#EXTINF:-1 tvg-id="SmithsonianChannelAsia.us" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/SmithsonianChannellogo.png/512px-SmithsonianChannellogo.png" group-title="Science",Smithsonian Channel
+https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg01553-blueantmediaasi-smithsoniannz-samsungnz/playlist.m3u8
