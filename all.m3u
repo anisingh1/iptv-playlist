@@ -5,7 +5,7 @@ https://feeds.intoday.in/aajtak/api/master.m3u8
 https://abplivetv.akamaized.net/hls/live/2043010/hindi/master.m3u8
 #EXTINF:-1 tvg-id="TV9Bharatvarsh.in" tvg-logo="https://i.imgur.com/GEqUslW.png" group-title="Hindi News",TV9 Bharatvarsh
 https://dyjmyiv3bp2ez.cloudfront.net/pub-iotv9hinjzgtpe/liveabr/playlist.m3u8
-#EXTINF:-1 tvg-id="INDIA TV" tvg-logo="https://a.jsrdn.com/hls/23084/india-tv/logo_20220825_164753_68.png"  group-title="Hindi News",INDIA TV
+#EXTINF:-1 tvg-id="INDIA TV" tvg-logo="https://a.jsrdn.com/hls/23084/india-tv/logo_20220825_164753_68.png"  group-title="Hindi News",India TV
 https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/india-tv/master.m3u8
 #EXTINF:-1 tvg-id="REPUBLICBHARAT" tvg-logo="https://www.examsegg.com/wp-content/uploads/2021/02/republic-bharat-logo-e1613310592185.jpg"  group-title="Hindi News",Republic Bharat
 https://webliverb.republicworld.com/httppush/ottrb_republic_hindi/ottrb/master.m3u8?e=1651431600&h=f66a60a21c8b02a8690d98c6c5fda5bb
@@ -17,14 +17,14 @@ https://restv4-as.ott.kaltura.com/api_v3/service/assetFile/action/playManifest/p
 https://restv4-as.ott.kaltura.com/api_v3/service/assetFile/action/playManifest/partnerId/487/assetId/1283530/assetType/media/assetFileId/15825341/contextType/PLAYBACK/isAltUrl/False/a.m3u8
 #EXTINF:-1 tvg-id="NEWS NATION" tvg-logo="https://i.imgur.com/9xeIWqm.png"  group-title="Hindi News",News Nation
 https://restv4-as.ott.kaltura.com/api_v3/service/assetFile/action/playManifest/partnerId/487/assetId/678533/assetType/media/assetFileId/15558311/contextType/PLAYBACK/isAltUrl/False/a.m3u8
-#EXTINF:-1 tvg-id="NDTV INDIA" tvg-logo="https://i.imgur.com/PyDjUZB.png" group-title="Hindi News",NDTV INDIA
+#EXTINF:-1 tvg-id="NDTV INDIA" tvg-logo="https://i.imgur.com/PyDjUZB.png" group-title="Hindi News",NDTV India
 https://ndtvindiaelemarchana.akamaized.net/hls/live/2003679-b/ndtvindia/master.m3u8
 
 #EXTINF:-1 tvg-id="ALJAZEERA" tvg-logo="https://c.tenor.com/5aaQW6UiR9sAAAAC/al-jazeera-news-channel-logo.gif" group-title="English News",Al Jazeera
 https://live-hls-web-aje.getaj.net/AJE/index.m3u8
-#EXTINF:-1 tvg-id="INDIA TODAY" tvg-logo="http://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/GwmEMW18.png" group-title="English News",INDIA TODAY
+#EXTINF:-1 tvg-id="INDIA TODAY" tvg-logo="http://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/GwmEMW18.png" group-title="English News",India Today
 https://feeds.intoday.in/hltapps/api/master.m3u8
-#EXTINF:-1 tvg-id="REPUBLIC TV" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/c/c0/Republic_TV.png" group-title="English News",Republic TV
+#EXTINF:-1 tvg-id="REPUBLIC TV" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/c/c0/Republic_TV.png" group-title="English News",Republic
 https://weblive.republicworld.com/httppush/ottr_republic_english/ottr/master.m3u8?e=1651389600&h=67242102ec7fc359b6b619159615c280
 
 #EXTINF:-1 tvg-id="ColorsCineplex.in" tvg-logo="https://i.imgur.com/Hvvjfk5.png" group-title="Hindi Movies",Colors Cineplex
