@@ -24,16 +24,3 @@ https://ndtvindiaelemarchana.akamaized.net/hls/live/2003679-b/ndtvindia/master.m
 https://live-hls-web-aje.getaj.net/AJE/index.m3u8
 #EXTINF:-1 tvg-id="INDIA TODAY" tvg-logo="http://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/GwmEMW18.png" group-title="English News",India Today
 https://feeds.intoday.in/hltapps/api/master.m3u8
-
-#EXTINF:-1 tvg-id="NickHDPlus.in" tvg-logo="https://i.imgur.com/nJPbTet.png" group-title="Kids",Nick HD+
-https://prod-sports-north-gm.jiocinema.com/bpk-tv/Nick_HD_Plus_voot_MOB/Fallback/index.m3u8
-#EXTINF:-1 tvg-id="NickJrIndia.in" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Nick_Jr._logo_2009.svg/512px-Nick_Jr._logo_2009.svg.png" group-title="Kids",Nick Jr
-https://prod-sports-north-gm.jiocinema.com/bpk-tv/Nick_Junior_voot_MOB/Fallback/index.m3u8
-#EXTINF:-1 tvg-id="NickelodeonSonic.in" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/2/2b/Nickelodeon_Sonic_logo.png/512px-Nickelodeon_Sonic_logo.png" group-title="Kids",Sonic Nickelodeon
-https://prod-sports-north-gm.jiocinema.com/bpk-tv/Sonic_Nickelodeon_voot_MOB/Fallback/index.m3u8
-#EXTINF:-1 tvg-id="GUBBARE" tvg-logo="https://www.epicon.in/img/gubbare-logo.png" group-title="Kids",Gubbare
-https://epiconvh.s.llnwi.net/gubbare/master.m3u8
-#EXTINF:-1 tvg-id="DiscoveryKids" tvg-logo="https://i.imgur.com/swM1L4e.png" group-title="Kids",Discovery kids
-https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg01448-samsungin-discoverykids-samsungin/playlist.m3u8
-#EXTINF:-1 tvg-id="PBSKIDS" tvg-logo="https://i.imgur.com/ambc9le.png" group-title="Kids",PBS KIDS
-https://2-fss-2.streamhoster.com/pl_140/amlst:200914-1298290/playlist.m3u8?DVR
