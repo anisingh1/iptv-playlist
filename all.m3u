@@ -1,26 +1,21 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="AAJ TAK" tvg-logo="https://akm-img-a-in.tosshub.com/aajtak/resource/img/bemisaal-20-saal/at-hd-191x84.png"  group-title="Hindi News",Aaj Tak
 https://feeds.intoday.in/aajtak/api/master.m3u8
-#EXTINF:-1 tvg-id="ABPNews.in" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/ABP_News_logo.svg/512px-ABP_News_logo.svg.png" group-title="Hindi News",ABP News
-https://abplivetv.akamaized.net/hls/live/2043010/hindi/master.m3u8
 #EXTINF:-1 tvg-id="TV9Bharatvarsh.in" tvg-logo="https://i.imgur.com/GEqUslW.png" group-title="Hindi News",TV9 Bharatvarsh
 https://dyjmyiv3bp2ez.cloudfront.net/pub-iotv9hinjzgtpe/liveabr/playlist.m3u8
+#EXTINF:-1 tvg-id="NEWS 18 INDIA" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/News_18_India.png/220px-News_18_India.png"  group-title="Hindi News",News 18 India
+https://nw18live.cdn.jio.com/bpk-tv/News18_India_NW18_MOB/output01/index.m3u8?__hdnea__=st=1668078327~exp=1668164727~acl=/*~hmac=511e50c537d634de539610771757472844e355fa465ca859dbe44ffa191eec09
+#EXTINF:-1 tvg-id="NDTV INDIA" tvg-logo="https://i.imgur.com/PyDjUZB.png" group-title="Hindi News",NDTV India
+https://ndtvindiaelemarchana.akamaized.net/hls/live/2003679-b/ndtvindia/master.m3u8
+#EXTINF:-1 tvg-id="NEWS NATION" tvg-logo="https://i.imgur.com/9xeIWqm.png"  group-title="Hindi News",News Nation
+https://restv4-as.ott.kaltura.com/api_v3/service/assetFile/action/playManifest/partnerId/487/assetId/678533/assetType/media/assetFileId/15558311/contextType/PLAYBACK/isAltUrl/False/a.m3u8
+#EXTINF:-1 tvg-id="ABPNews.in" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/ABP_News_logo.svg/512px-ABP_News_logo.svg.png" group-title="Hindi News",ABP News
+https://abplivetv.akamaized.net/hls/live/2043010/hindi/master.m3u8
 #EXTINF:-1 tvg-id="INDIA TV" tvg-logo="https://a.jsrdn.com/hls/23084/india-tv/logo_20220825_164753_68.png"  group-title="Hindi News",India TV
 https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/india-tv/master.m3u8
 #EXTINF:-1 tvg-id="REPUBLICBHARAT" tvg-logo="https://www.examsegg.com/wp-content/uploads/2021/02/republic-bharat-logo-e1613310592185.jpg"  group-title="Hindi News",Republic Bharat
 https://webliverb.republicworld.com/httppush/ottrb_republic_hindi/ottrb/master.m3u8?e=1651431600&h=f66a60a21c8b02a8690d98c6c5fda5bb
-#EXTINF:-1 tvg-id="NEWS 18 INDIA" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/News_18_India.png/220px-News_18_India.png"  group-title="Hindi News",News 18 India
-https://nw18live.cdn.jio.com/bpk-tv/News18_India_NW18_MOB/output01/index.m3u8?__hdnea__=st=1668078327~exp=1668164727~acl=/*~hmac=511e50c537d634de539610771757472844e355fa465ca859dbe44ffa191eec09
 #EXTINF:-1 tvg-id="ZEE NEWS" tvg-logo="http://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/wdPs8bpF.png"  group-title="Hindi News",Zee News
 https://news.codeautoplay.workers.dev/?codeby=nd&channel=zeenews
 #EXTINF:-1 tvg-id="TIMES NOW NAVBHARAT" tvg-logo="https://i.imgur.com/kSCozXg.png"  group-title="Hindi News",Times Now Navbharat
 https://restv4-as.ott.kaltura.com/api_v3/service/assetFile/action/playManifest/partnerId/487/assetId/1283530/assetType/media/assetFileId/15825341/contextType/PLAYBACK/isAltUrl/False/a.m3u8
-#EXTINF:-1 tvg-id="NEWS NATION" tvg-logo="https://i.imgur.com/9xeIWqm.png"  group-title="Hindi News",News Nation
-https://restv4-as.ott.kaltura.com/api_v3/service/assetFile/action/playManifest/partnerId/487/assetId/678533/assetType/media/assetFileId/15558311/contextType/PLAYBACK/isAltUrl/False/a.m3u8
-#EXTINF:-1 tvg-id="NDTV INDIA" tvg-logo="https://i.imgur.com/PyDjUZB.png" group-title="Hindi News",NDTV India
-https://ndtvindiaelemarchana.akamaized.net/hls/live/2003679-b/ndtvindia/master.m3u8
-
-#EXTINF:-1 tvg-id="ALJAZEERA" tvg-logo="https://c.tenor.com/5aaQW6UiR9sAAAAC/al-jazeera-news-channel-logo.gif" group-title="English News",Al Jazeera
-https://live-hls-web-aje.getaj.net/AJE/index.m3u8
-#EXTINF:-1 tvg-id="INDIA TODAY" tvg-logo="http://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/GwmEMW18.png" group-title="English News",India Today
-https://feeds.intoday.in/hltapps/api/master.m3u8
