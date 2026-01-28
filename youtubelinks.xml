@@ -9,7 +9,7 @@
     </channel>
     <channel>
         <channel-name>Times Now Navbharat</channel-name>
-        <tvg-id>AajTak.in</tvg-id>
+        <tvg-id>TimesNowNavbharat.in</tvg-id>
         <tvg-name>Times Now Navbharat</tvg-name>
         <tvg-logo>logo/hindi news/Times_Now_Navbharat.png</tvg-logo>
         <group-title>Hindi News</group-title>
@@ -17,7 +17,7 @@
     </channel>
     <channel>
         <channel-name>ABP News</channel-name>
-        <tvg-id>AajTak.in</tvg-id>
+        <tvg-id>ABPNews.in</tvg-id>
         <tvg-name>ABP News</tvg-name>
         <tvg-logo>logo/hindi news/ABP_News.png</tvg-logo>
         <group-title>Hindi News</group-title>
@@ -25,7 +25,7 @@
     </channel>
     <channel>
         <channel-name>NDTV India</channel-name>
-        <tvg-id>AajTak.in</tvg-id>
+        <tvg-id>NDTVIndia.in</tvg-id>
         <tvg-name>NDTV India</tvg-name>
         <tvg-logo>logo/hindi news/NDTV_India.png</tvg-logo>
         <group-title>Hindi News</group-title>
@@ -33,7 +33,7 @@
     </channel>
     <channel>
         <channel-name>News 18 India</channel-name>
-        <tvg-id>AajTak.in</tvg-id>
+        <tvg-id>News18India.in</tvg-id>
         <tvg-name>News 18 India</tvg-name>
         <tvg-logo>logo/hindi news/News_18_India.png</tvg-logo>
         <group-title>Hindi News</group-title>
@@ -41,7 +41,7 @@
     </channel>
     <channel>
         <channel-name>News Nation</channel-name>
-        <tvg-id>AajTak.in</tvg-id>
+        <tvg-id>NewsNation.in</tvg-id>
         <tvg-name>News Nation</tvg-name>
         <tvg-logo>logo/hindi news/News_Nation.jpg</tvg-logo>
         <group-title>Hindi News</group-title>
@@ -49,7 +49,7 @@
     </channel>
     <channel>
         <channel-name>Republic Bharat</channel-name>
-        <tvg-id>AajTak.in</tvg-id>
+        <tvg-id>RepublicBharat.in</tvg-id>
         <tvg-name>Republic Bharat</tvg-name>
         <tvg-logo>logo/hindi news/Republic_Bharat.jpg</tvg-logo>
         <group-title>Hindi News</group-title>
@@ -57,7 +57,7 @@
     </channel>
     <channel>
         <channel-name>TV9 Bharatvarsh</channel-name>
-        <tvg-id>AajTak.in</tvg-id>
+        <tvg-id>TV9Bharatvarsh.in</tvg-id>
         <tvg-name>TV9 Bharatvarsh</tvg-name>
         <tvg-logo>logo/hindi news/TV9_Bharatvarsh.png</tvg-logo>
         <group-title>Hindi News</group-title>
@@ -65,15 +65,15 @@
     </channel>
     <channel>
         <channel-name>Zee News</channel-name>
-        <tvg-id>AajTak.in</tvg-id>
+        <tvg-id>ZeeNews.in</tvg-id>
         <tvg-name>Zee News</tvg-name>
         <tvg-logo>logo/hindi news/Zee_News.png</tvg-logo>
         <group-title>Hindi News</group-title>
         <youtube-url>https://www.youtube.com/@ZeeNews/live</youtube-url>
     </channel>
     <channel>
-        <channel-name>Zee News</channel-name>
-        <tvg-id>AajTak.in</tvg-id>
+        <channel-name>DD News</channel-name>
+        <tvg-id>DDNews.in</tvg-id>
         <tvg-name>DD News</tvg-name>
         <tvg-logo>logo/hindi news/Zee_News.png</tvg-logo>
         <group-title>Hindi News</group-title>
