@@ -1,0 +1,21 @@
+#EXTM3U
+#EXTINF:-1 tvg-name="Aaj Tak" tvg-id="AajTak.in" tvg-logo="https://hi.wikipedia.org/wiki/%E0%A4%9A%E0%A4%BF%E0%A4%A4%E0%A5%8D%E0%A4%B0:Aaj_tak_logo.png group-title="Hindi News",Aaj Tak
+http://192.168.1.16:6095/stream?url=https://www.youtube.com/@aajtak/live
+#EXTINF:-1 tvg-name="Times Now Navbharat" tvg-id="AajTak.in" tvg-logo="https://hi.wikipedia.org/wiki/%E0%A4%9A%E0%A4%BF%E0%A4%A4%E0%A5%8D%E0%A4%B0:Aaj_tak_logo.png group-title="Hindi News",Times Now Navbharat
+http://192.168.1.16:6095/stream?url=https://www.youtube.com/@timesnownavbharat/live
+#EXTINF:-1 tvg-name="ABP News" tvg-id="AajTak.in" tvg-logo="https://hi.wikipedia.org/wiki/%E0%A4%9A%E0%A4%BF%E0%A4%A4%E0%A5%8D%E0%A4%B0:Aaj_tak_logo.png group-title="Hindi News",ABP News
+http://192.168.1.16:6095/stream?url=https://www.youtube.com/@ABPNews/live
+#EXTINF:-1 tvg-name="NDTV India" tvg-id="AajTak.in" tvg-logo="https://hi.wikipedia.org/wiki/%E0%A4%9A%E0%A4%BF%E0%A4%A4%E0%A5%8D%E0%A4%B0:Aaj_tak_logo.png group-title="Hindi News",NDTV India
+http://192.168.1.16:6095/stream?url=https://www.youtube.com/@ndtvindia/live
+#EXTINF:-1 tvg-name="News 18 India" tvg-id="AajTak.in" tvg-logo="https://hi.wikipedia.org/wiki/%E0%A4%9A%E0%A4%BF%E0%A4%A4%E0%A5%8D%E0%A4%B0:Aaj_tak_logo.png group-title="Hindi News",News 18 India
+http://192.168.1.16:6095/stream?url=https://www.youtube.com/@news18india/live
+#EXTINF:-1 tvg-name="News Nation" tvg-id="AajTak.in" tvg-logo="https://hi.wikipedia.org/wiki/%E0%A4%9A%E0%A4%BF%E0%A4%A4%E0%A5%8D%E0%A4%B0:Aaj_tak_logo.png group-title="Hindi News",News Nation
+http://192.168.1.16:6095/stream?url=https://www.youtube.com/@NewsNationTV/live
+#EXTINF:-1 tvg-name="Republic Bharat" tvg-id="AajTak.in" tvg-logo="https://hi.wikipedia.org/wiki/%E0%A4%9A%E0%A4%BF%E0%A4%A4%E0%A5%8D%E0%A4%B0:Aaj_tak_logo.png group-title="Hindi News",Republic Bharat
+http://192.168.1.16:6095/stream?url=https://www.youtube.com/@RepublicBharat/live
+#EXTINF:-1 tvg-name="TV9 Bharatvarsh" tvg-id="AajTak.in" tvg-logo="https://hi.wikipedia.org/wiki/%E0%A4%9A%E0%A4%BF%E0%A4%A4%E0%A5%8D%E0%A4%B0:Aaj_tak_logo.png group-title="Hindi News",TV9 Bharatvarsh
+http://192.168.1.16:6095/stream?url=https://www.youtube.com/@TV9Bharatvarsh/live
+#EXTINF:-1 tvg-name="Zee News" tvg-id="AajTak.in" tvg-logo="https://hi.wikipedia.org/wiki/%E0%A4%9A%E0%A4%BF%E0%A4%A4%E0%A5%8D%E0%A4%B0:Aaj_tak_logo.png group-title="Hindi News",Zee News
+http://192.168.1.16:6095/stream?url=https://www.youtube.com/@ZeeNews/live
+#EXTINF:-1 tvg-name="DD News" tvg-id="AajTak.in" tvg-logo="https://hi.wikipedia.org/wiki/%E0%A4%9A%E0%A4%BF%E0%A4%A4%E0%A5%8D%E0%A4%B0:Aaj_tak_logo.png group-title="Hindi News",Zee News
+http://192.168.1.16:6095/stream?url=https://www.youtube.com/@DDnews/live
