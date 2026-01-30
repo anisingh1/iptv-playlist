@@ -136,29 +136,5 @@
         <group-title>Kids</group-title>
         <youtube-url>https://www.youtube.com/@disneyjr/live</youtube-url>
     </channel>
-
-    <channel>
-        <channel-name>ClipZone High Octane Hits</channel-name>
-        <tvg-id>ClipZoneHighOctaneHits.in</tvg-id>
-        <tvg-name>ClipZone High Octane Hits</tvg-name>
-        <tvg-logo>logo/kids/ClipZone_High_Octane_Hits.png</tvg-logo>
-        <group-title>Kids</group-title>
-        <youtube-url>https://www.youtube.com/@ClipZoneHighOctaneHits/live</youtube-url>
-    </channel>
-    <channel>
-        <channel-name>ClipZone Comedy Callbacks</channel-name>
-        <tvg-id>ClipZoneComedyCallbacks.in</tvg-id>
-        <tvg-name>ClipZone Comedy Callbacks</tvg-name>
-        <tvg-logo>logo/kids/ClipZone_Comedy_Callbacks.png</tvg-logo>
-        <group-title>Kids</group-title>
-        <youtube-url>https://www.youtube.com/@ClipZoneComedyCallbacks/live</youtube-url>
-    </channel>
-    <channel>
-        <channel-name>ClipZone Horrorscapes</channel-name>
-        <tvg-id>ClipZoneHorrorscapes.in</tvg-id>
-        <tvg-name>ClipZone Horrorscapes</tvg-name>
-        <tvg-logo>logo/kids/ClipZone_Horrorscapes.png</tvg-logo>
-        <group-title>Kids</group-title>
-        <youtube-url>https://www.youtube.com/@ClipzoneHorror/live</youtube-url>
-    </channel>
 </channels>
+
