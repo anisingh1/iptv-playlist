@@ -79,4 +79,86 @@
         <group-title>Hindi News</group-title>
         <youtube-url>https://www.youtube.com/@DDnews/live</youtube-url>
     </channel>
+
+    <channel>
+        <channel-name>Cartoon Network</channel-name>
+        <tvg-id>CartoonNetwork.in</tvg-id>
+        <tvg-name>Cartoon Network</tvg-name>
+        <tvg-logo>logo/kids/Cartoon_Network.png</tvg-logo>
+        <group-title>Kids</group-title>
+        <youtube-url>https://www.youtube.com/@AdventureTime/live</youtube-url>
+    </channel>
+    <channel>
+        <channel-name>Boomerang UK</channel-name>
+        <tvg-id>BoomerangUK.in</tvg-id>
+        <tvg-name>Boomerang UK</tvg-name>
+        <tvg-logo>logo/kids/Boomerang_UK.png</tvg-logo>
+        <group-title>Kids</group-title>
+        <youtube-url>https://www.youtube.com/@BoomerangUK/live</youtube-url>
+    </channel>
+    <channel>
+        <channel-name>Cartoonito</channel-name>
+        <tvg-id>Cartoonito.in</tvg-id>
+        <tvg-name>Cartoonito</tvg-name>
+        <tvg-logo>logo/kids/Cartoonito.png</tvg-logo>
+        <group-title>Kids</group-title>
+        <youtube-url>https://www.youtube.com/@cartoonito/live</youtube-url>
+    </channel>
+    <channel>
+        <channel-name>Warner Bros Classics</channel-name>
+        <tvg-id>WarnerBrosClassics.in</tvg-id>
+        <tvg-name>Warner Bros Classics</tvg-name>
+        <tvg-logo>logo/kids/Warner_Bros_Classics.png</tvg-logo>
+        <group-title>Kids</group-title>
+        <youtube-url>https://www.youtube.com/@warnerbrosclassics/live</youtube-url>
+    </channel>
+    <channel>
+        <channel-name>Disney Kids</channel-name>
+        <tvg-id>DisneyKids.in</tvg-id>
+        <tvg-name>Disney Kids</tvg-name>
+        <tvg-logo>logo/kids/Disney_Kids.png</tvg-logo>
+        <group-title>Kids</group-title>
+        <youtube-url>https://www.youtube.com/@disneykids/live</youtube-url>
+    </channel>
+    <channel>
+        <channel-name>Disney Channel Animation</channel-name>
+        <tvg-id>DisneyChannelAnimation.in</tvg-id>
+        <tvg-name>Disney Channel Animation</tvg-name>
+        <tvg-logo>logo/kids/Disney_Channel_Animation.png</tvg-logo>
+        <group-title>Kids</group-title>
+        <youtube-url>https://www.youtube.com/@disneychannelanimation/live</youtube-url>
+    </channel>
+    <channel>
+        <channel-name>Disney Junior</channel-name>
+        <tvg-id>DisneyJunior.in</tvg-id>
+        <tvg-name>Disney Junior</tvg-name>
+        <tvg-logo>logo/kids/Disney_Junior.png</tvg-logo>
+        <group-title>Kids</group-title>
+        <youtube-url>https://www.youtube.com/@disneyjr/live</youtube-url>
+    </channel>
+
+    <channel>
+        <channel-name>ClipZone High Octane Hits</channel-name>
+        <tvg-id>ClipZoneHighOctaneHits.in</tvg-id>
+        <tvg-name>ClipZone High Octane Hits</tvg-name>
+        <tvg-logo>logo/kids/ClipZone_High_Octane_Hits.png</tvg-logo>
+        <group-title>Kids</group-title>
+        <youtube-url>https://www.youtube.com/@ClipZoneHighOctaneHits/live</youtube-url>
+    </channel>
+    <channel>
+        <channel-name>ClipZone Comedy Callbacks</channel-name>
+        <tvg-id>ClipZoneComedyCallbacks.in</tvg-id>
+        <tvg-name>ClipZone Comedy Callbacks</tvg-name>
+        <tvg-logo>logo/kids/ClipZone_Comedy_Callbacks.png</tvg-logo>
+        <group-title>Kids</group-title>
+        <youtube-url>https://www.youtube.com/@ClipZoneComedyCallbacks/live</youtube-url>
+    </channel>
+    <channel>
+        <channel-name>ClipZone Horrorscapes</channel-name>
+        <tvg-id>ClipZoneHorrorscapes.in</tvg-id>
+        <tvg-name>ClipZone Horrorscapes</tvg-name>
+        <tvg-logo>logo/kids/ClipZone_Horrorscapes.png</tvg-logo>
+        <group-title>Kids</group-title>
+        <youtube-url>https://www.youtube.com/@ClipzoneHorror/live</youtube-url>
+    </channel>
 </channels>
