@@ -217,6 +217,74 @@ def parse_channel_xml(file_path):
         logging.error(f'Failed to parse XML file {file_path}: {exc}')
         return None
 
+def commit_m3u_to_git(m3u_file):
+    """Commit the M3U file to git."""
+    try:
+        # Check if file has changes
+        status_result = subprocess.run(
+            ['git', 'status', '--porcelain', m3u_file],
+            cwd=REPO_ROOT,
+            capture_output=True,
+            text=True,
+            timeout=10
+        )
+        
+        if not status_result.stdout.strip():
+            logging.info('No changes to %s, skipping commit.', m3u_file)
+            return True
+        
+        # Add the file
+        add_result = subprocess.run(
+            ['git', 'add', m3u_file],
+            cwd=REPO_ROOT,
+            capture_output=True,
+            text=True,
+            timeout=10
+        )
+        
+        if add_result.returncode != 0:
+            logging.error('git add failed: %s', add_result.stderr)
+            return False
+        
+        # Commit with timestamp
+        commit_msg = f'Auto-update {m3u_file} at {time.strftime("%Y-%m-%d %H:%M:%S")}'
+        commit_result = subprocess.run(
+            ['git', 'commit', '-m', commit_msg],
+            cwd=REPO_ROOT,
+            capture_output=True,
+            text=True,
+            timeout=10
+        )
+        
+        if commit_result.returncode != 0:
+            logging.error('git commit failed: %s', commit_result.stderr)
+            return False
+        
+        logging.info('Committed %s to git: %s', m3u_file, commit_msg)
+        
+        # Push to remote
+        push_result = subprocess.run(
+            ['git', 'push'],
+            cwd=REPO_ROOT,
+            capture_output=True,
+            text=True,
+            timeout=30
+        )
+        
+        if push_result.returncode != 0:
+            logging.error('git push failed: %s', push_result.stderr)
+            return False
+        
+        logging.info('Pushed %s to remote repository.', m3u_file)
+        return True
+        
+    except subprocess.TimeoutExpired:
+        logging.error('Git operation timed out')
+        return False
+    except Exception as exc:
+        logging.error('Failed to commit to git: %s', exc)
+        return False
+
 def generate_m3u_from_xml(input_xml, output_m3u, host_ip, port):
     """Generate youtubelive.m3u from the input XML file."""
     channels = parse_channel_xml(input_xml)
@@ -240,6 +308,10 @@ def generate_m3u_from_xml(input_xml, output_m3u, host_ip, port):
                     f'http://{host_ip}:{port}/stream?url={stream_url}\n'
                 )
         logging.info('Generated %s from %s', output_m3u, input_xml)
+        
+        # Commit the M3U file to git
+        commit_m3u_to_git(output_m3u)
+        
         return True
     except Exception as exc:
         logging.error(f'Failed to generate M3U file {output_m3u}: {exc}')
