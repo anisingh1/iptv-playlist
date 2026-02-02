@@ -29,7 +29,7 @@ http://192.168.1.16:6095/stream?url=https://www.youtube.com/%40cartoonito/live
 http://192.168.1.16:6095/stream?url=https://www.youtube.com/%40warnerbrosclassics/live
 #EXTINF:-1 tvg-id="DisneyKids.in" tvg-name="Disney Kids" tvg-logo="logo/kids/Disney_Kids.png" group-title="Kids",Disney Kids
 http://192.168.1.16:6095/stream?url=https://www.youtube.com/%40disneykids/live
-#EXTINF:-1 tvg-id="DisneyChannelAnimation.in" tvg-name="Disney Channel Animation" tvg-logo="logo/kids/Disney_Channel_Animation.png" group-title="Kids",Disney Channel Animation
+#EXTINF:-1 tvg-id="DisneyChannel.in" tvg-name="Disney Channel" tvg-logo="logo/kids/Disney_Channel_Animation.png" group-title="Kids",Disney Channel
 http://192.168.1.16:6095/stream?url=https://www.youtube.com/%40disneychannelanimation/live
 #EXTINF:-1 tvg-id="DisneyJunior.in" tvg-name="Disney Junior" tvg-logo="logo/kids/Disney_Junior.png" group-title="Kids",Disney Junior
 http://192.168.1.16:6095/stream?url=https://www.youtube.com/%40disneyjr/live
