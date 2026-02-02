@@ -8,7 +8,8 @@ import hashlib
 import urllib.request
 import urllib.error
 import xml.etree.ElementTree as ET
-from flask import Flask, request, Response, jsonify
+import shutil
+from flask import Flask, request, Response, jsonify, redirect
 from urllib.parse import unquote, quote
 import os
 
@@ -20,6 +21,13 @@ app = Flask(__name__)
 # Set up logging with UTF-8 encoding
 logging.basicConfig(level=logging.INFO, encoding='utf-8')
 
+# Find streamlink in PATH or venv
+STREAMLINK_PATH = shutil.which('streamlink') or 'streamlink'
+YT_DLP_PATH = shutil.which('yt-dlp') or 'yt-dlp'
+
+logging.info(f'Using streamlink: {STREAMLINK_PATH}')
+logging.info(f'Using yt-dlp: {YT_DLP_PATH}')
+
 DEFAULT_INPUT_XML = 'youtubelinks.xml'
 DEFAULT_OUTPUT_M3U = 'youtubelive.m3u'
 DEFAULT_PORT = 6095
@@ -27,6 +35,8 @@ DEFAULT_SYNC_INTERVAL_SECONDS = 86400
 SOURCE_XML_URL = 'https://github.com/anisingh1/iptv-playlist/blob/main/youtubelinks.xml'
 CACHE_REFRESH_INTERVAL_SECONDS = 3600
 CACHE_TTL_SECONDS = 3600
+STARTUP_CACHE_ENABLED = True  # Pre-warm cache on startup
+STREAM_QUALITY = '720p'  # Stream quality (720p, 480p, 360p, best, worst)
 
 REPO_ROOT = os.path.dirname(os.path.abspath(__file__))
 STREAM_CACHE = {}
@@ -87,49 +97,65 @@ def set_cached_stream(url, stream_url):
         }
 
 def resolve_stream_url(youtube_url):
-    """Resolve a stream URL using Streamlink, with youtube-dl fallback."""
+    """Resolve a stream URL using Streamlink (optimized for speed)."""
     try:
-        info_command = ['streamlink', '--json', '--loglevel', 'debug', youtube_url]
-        info_process = subprocess.Popen(info_command, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-        info_output, info_error = info_process.communicate()
+        # Optimized: removed --loglevel debug, use --stream-url for direct URL extraction
+        info_command = [STREAMLINK_PATH, '--stream-url', youtube_url, STREAM_QUALITY]
+        info_process = subprocess.Popen(
+            info_command, 
+            stdout=subprocess.PIPE, 
+            stderr=subprocess.PIPE,
+            env={**os.environ, 'PYTHONIOENCODING': 'utf-8'}
+        )
+        info_output, info_error = info_process.communicate(timeout=15)
 
         if info_process.returncode != 0:
             error_msg = info_error.decode('utf-8', errors='replace')
-            logging.error(f'Streamlink error: {error_msg}')
-            return None
-
-        stream_info = json.loads(info_output.decode('utf-8', errors='replace'))
-        if 'streams' not in stream_info or not stream_info['streams']:
+            logging.error(f'Streamlink error for {youtube_url}: {error_msg}')
+            
+            # Fallback to yt-dlp (faster than youtube-dl)
             if 'youtube.com' in youtube_url.lower() or 'youtu.be' in youtube_url.lower():
-                yt_command = ['youtube-dl', '--get-url', '--youtube-skip-dash-manifest', youtube_url]
-                yt_process = subprocess.Popen(yt_command, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-                yt_url, yt_error = yt_process.communicate()
-
-                if yt_process.returncode != 0:
-                    logging.error(
-                        f"youtube-dl error: {yt_error.decode('utf-8', errors='replace')}"
+                try:
+                    yt_command = [YT_DLP_PATH, '--get-url', '--no-warnings', youtube_url]
+                    yt_process = subprocess.Popen(
+                        yt_command, 
+                        stdout=subprocess.PIPE, 
+                        stderr=subprocess.PIPE,
+                        env={**os.environ, 'PYTHONIOENCODING': 'utf-8'}
                     )
-                    return None
+                    yt_url, yt_error = yt_process.communicate(timeout=15)
 
-                return yt_url.decode('utf-8', errors='replace').strip()
+                    if yt_process.returncode == 0:
+                        urls = yt_url.decode('utf-8', errors='replace').strip().split('\n')
+                        # Return the first URL (usually video+audio combined)
+                        return urls[0] if urls else None
+                    
+                    logging.error(f"yt-dlp error: {yt_error.decode('utf-8', errors='replace')}")
+                except (subprocess.TimeoutExpired, Exception) as e:
+                    logging.error(f'yt-dlp fallback failed: {e}')
             return None
 
-        best_quality = stream_info['streams'].get('best')
-        if not best_quality:
-            return None
-
-        return best_quality.get('url')
+        stream_url = info_output.decode('utf-8', errors='replace').strip()
+        return stream_url if stream_url else None
+        
+    except subprocess.TimeoutExpired:
+        logging.error(f'Timeout resolving stream URL for {youtube_url}')
+        return None
     except Exception as exc:
-        logging.error(f'Error resolving stream URL: {str(exc)}')
+        logging.error(f'Error resolving stream URL for {youtube_url}: {str(exc)}')
         return None
 
-def refresh_stream_cache_loop(interval_seconds):
+def refresh_stream_cache_loop(interval_seconds, run_immediately=True):
     """Refresh cached stream URLs on a schedule."""
     xml_path = os.path.join(REPO_ROOT, DEFAULT_INPUT_XML)
-    while True:
+    
+    # Run immediately on first call if requested (for pre-warming)
+    if run_immediately:
+        logging.info('Pre-warming stream cache on startup...')
         try:
             if os.path.exists(xml_path):
                 channels = parse_channel_xml(xml_path) or []
+                success_count = 0
                 for channel in channels:
                     youtube_url = channel.get('youtube-url')
                     if not youtube_url:
@@ -137,13 +163,41 @@ def refresh_stream_cache_loop(interval_seconds):
                     stream_url = resolve_stream_url(youtube_url)
                     if stream_url:
                         set_cached_stream(youtube_url, stream_url)
-                        logging.info('Cached stream URL for %s', channel.get('name', youtube_url))
+                        success_count += 1
+                        logging.info('Pre-cached: %s', channel.get('name', youtube_url))
+                    else:
+                        logging.warning('Failed to pre-cache: %s', channel.get('name', youtube_url))
+                logging.info('Pre-warming complete: %d/%d channels cached', success_count, len(channels))
+            else:
+                logging.warning('Cannot pre-warm cache: %s not found', xml_path)
+        except Exception as exc:
+            logging.error('Pre-warming cache error: %s', exc)
+    
+    # Now continue with periodic refresh
+    while True:
+        time.sleep(interval_seconds)
+        
+        try:
+            if os.path.exists(xml_path):
+                channels = parse_channel_xml(xml_path) or []
+                logging.info('Starting scheduled cache refresh for %d channels...', len(channels))
+                success_count = 0
+                for channel in channels:
+                    youtube_url = channel.get('youtube-url')
+                    if not youtube_url:
+                        continue
+                    stream_url = resolve_stream_url(youtube_url)
+                    if stream_url:
+                        set_cached_stream(youtube_url, stream_url)
+                        success_count += 1
+                        logging.info('Refreshed cache for %s', channel.get('name', youtube_url))
+                    else:
+                        logging.warning('Failed to refresh cache for %s', channel.get('name', youtube_url))
+                logging.info('Cache refresh complete: %d/%d channels refreshed successfully', success_count, len(channels))
             else:
                 logging.warning('Cache refresh: %s not found.', xml_path)
         except Exception as exc:
             logging.error('Cache refresh error: %s', exc)
-
-        time.sleep(interval_seconds)
 
 def sync_and_regenerate_loop(interval_seconds):
     """Periodically fetch remote XML and regenerate M3U if it changes."""
@@ -322,6 +376,9 @@ def stream():
     url = unquote(request.args.get('url'))  # Decode URL-encoded characters
     if not url:
         return jsonify({'error': 'URL parameter is required'}), 400
+    
+    # Check if client prefers redirect (for players that support it)
+    use_redirect = request.args.get('redirect', 'false').lower() == 'true'
 
     try:
         cached_stream = get_cached_stream(url)
@@ -329,31 +386,56 @@ def stream():
             stream_target = cached_stream
             logging.info('Using cached stream URL for %s', url)
         else:
+            logging.info('Cache miss for %s, resolving stream URL...', url)
             stream_target = resolve_stream_url(url)
             if not stream_target:
                 return jsonify({'error': 'No valid streams found'}), 404
             set_cached_stream(url, stream_target)
+        
+        # If redirect is requested and stream_target is a direct HLS URL, redirect
+        if use_redirect and stream_target.startswith('http'):
+            return redirect(stream_target, code=302)
 
-        # Command to run Streamlink
+        # Since stream_target is already an HLS URL from --stream-url, 
+        # we need to pass the original YouTube URL to streamlink, not the resolved URL
+        # Otherwise streamlink can't handle the already-resolved HLS manifest
         command = [
-            'streamlink',
-            stream_target,
-            'best',
+            STREAMLINK_PATH,
+            url,  # Use original YouTube URL, not the cached HLS URL
+            STREAM_QUALITY,  # Use configured quality
             '--hls-live-restart',
             '--stdout'
         ]
 
+        logging.info(f"Spawning streamlink with command: {' '.join(command)}")
+
         # Start the subprocess
-        process = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        process = subprocess.Popen(
+            command, 
+            stdout=subprocess.PIPE, 
+            stderr=subprocess.PIPE,
+            bufsize=8192  # Increased buffer size
+        )
         client_ip = request.remote_addr
 
         def generate():
             try:
                 logging.info(f"Starting stream for client {client_ip} from {url}")
+                chunk_count = 0
                 while True:
-                    data = process.stdout.read(4096)
+                    data = process.stdout.read(8192)  # Increased chunk size from 4096
                     if not data:
+                        # Check if process ended with error
+                        return_code = process.poll()
+                        if return_code is not None and return_code != 0:
+                            stderr_output = process.stderr.read().decode('utf-8', errors='replace')
+                            logging.error(f"Streamlink process failed with code {return_code}: {stderr_output}")
+                        else:
+                            logging.info(f"Stream ended normally for {client_ip}, sent {chunk_count} chunks")
                         break
+                    chunk_count += 1
+                    if chunk_count == 1:
+                        logging.info(f"First chunk sent to {client_ip}, stream is flowing")
                     yield data
             except GeneratorExit:
                 logging.info(f"Client {client_ip} disconnected from stream {url}")
@@ -363,15 +445,24 @@ def stream():
                 except subprocess.TimeoutExpired:
                     process.kill()
                 finally:
-                    process.stdout.close()
-                    process.stderr.close()
+                    try:
+                        process.stdout.close()
+                        process.stderr.close()
+                    except:
+                        pass
             except Exception as e:
                 logging.error(f'Error in generator for {client_ip}: {str(e)}')
                 process.terminate()
-                process.stdout.close()
-                process.stderr.close()
+                try:
+                    process.stdout.close()
+                    process.stderr.close()
+                except:
+                    pass
 
         response = Response(generate(), content_type='video/mp2t')
+        response.headers['Accept-Ranges'] = 'none'
+        response.headers['Connection'] = 'keep-alive'
+        response.headers['Cache-Control'] = 'no-cache, no-store, must-revalidate'
         
         @response.call_on_close
         def cleanup():
@@ -383,14 +474,43 @@ def stream():
                 except subprocess.TimeoutExpired:
                     process.kill()
                 finally:
-                    process.stdout.close()
-                    process.stderr.close()
+                    try:
+                        process.stdout.close()
+                        process.stderr.close()
+                    except:
+                        pass
 
         return response
 
     except Exception as e:
         logging.error(f'Error occurred: {str(e)}')
         return jsonify({'error': str(e)}), 500
+
+@app.route('/cache/status', methods=['GET'])
+def cache_status():
+    """Return cache status and statistics."""
+    with STREAM_CACHE_LOCK:
+        cached_entries = []
+        current_time = time.time()
+        for url, entry in STREAM_CACHE.items():
+            age_seconds = current_time - entry['timestamp']
+            cached_entries.append({
+                'url': url,
+                'age_seconds': int(age_seconds),
+                'expires_in_seconds': int(max(0, CACHE_TTL_SECONDS - age_seconds)),
+                'is_valid': age_seconds < CACHE_TTL_SECONDS
+            })
+        
+        return jsonify({
+            'total_cached': len(STREAM_CACHE),
+            'cache_ttl_seconds': CACHE_TTL_SECONDS,
+            'entries': cached_entries
+        })
+
+@app.route('/health', methods=['GET'])
+def health():
+    """Health check endpoint."""
+    return jsonify({'status': 'ok', 'service': 'iptv-youtube-proxy'})
 
 if __name__ == '__main__':
     input_xml = DEFAULT_INPUT_XML
@@ -403,6 +523,7 @@ if __name__ == '__main__':
             DEFAULT_INPUT_XML
         )
 
+    # Start background threads
     sync_thread = threading.Thread(
         target=sync_and_regenerate_loop,
         args=(DEFAULT_SYNC_INTERVAL_SECONDS,),
@@ -410,9 +531,10 @@ if __name__ == '__main__':
     )
     sync_thread.start()
 
+    # Start cache refresh thread (will pre-warm immediately if enabled, then refresh periodically)
     cache_thread = threading.Thread(
         target=refresh_stream_cache_loop,
-        args=(CACHE_REFRESH_INTERVAL_SECONDS,),
+        args=(CACHE_REFRESH_INTERVAL_SECONDS, STARTUP_CACHE_ENABLED),
         daemon=True
     )
     cache_thread.start()
