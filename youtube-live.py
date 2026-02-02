@@ -9,7 +9,7 @@ import urllib.request
 import urllib.error
 import xml.etree.ElementTree as ET
 import shutil
-from flask import Flask, request, Response, jsonify, redirect
+from flask import Flask, request, Response, jsonify
 from urllib.parse import unquote, quote
 import os
 
@@ -21,20 +21,22 @@ app = Flask(__name__)
 # Set up logging with UTF-8 encoding
 logging.basicConfig(level=logging.INFO, encoding='utf-8')
 
-# Find streamlink in PATH or venv
+# Find streamlink, ffmpeg, and yt-dlp in PATH or venv
 STREAMLINK_PATH = shutil.which('streamlink') or 'streamlink'
 YT_DLP_PATH = shutil.which('yt-dlp') or 'yt-dlp'
+FFMPEG_PATH = shutil.which('ffmpeg') or 'ffmpeg'
 
 logging.info(f'Using streamlink: {STREAMLINK_PATH}')
 logging.info(f'Using yt-dlp: {YT_DLP_PATH}')
+logging.info(f'Using ffmpeg: {FFMPEG_PATH}')
 
 DEFAULT_INPUT_XML = 'youtubelinks.xml'
 DEFAULT_OUTPUT_M3U = 'youtubelive.m3u'
 DEFAULT_PORT = 6095
 DEFAULT_SYNC_INTERVAL_SECONDS = 86400
 SOURCE_XML_URL = 'https://github.com/anisingh1/iptv-playlist/blob/main/youtubelinks.xml'
-CACHE_REFRESH_INTERVAL_SECONDS = 3600
-CACHE_TTL_SECONDS = 3600
+CACHE_REFRESH_INTERVAL_SECONDS = 3600  # 1 hour (cache is only for monitoring/stats now)
+CACHE_TTL_SECONDS = 7200  # 2 hours (not critical since we don't use it for streaming)
 STARTUP_CACHE_ENABLED = True  # Pre-warm cache on startup
 STREAM_QUALITY = '720p'  # Stream quality (720p, 480p, 360p, best, worst)
 
@@ -376,45 +378,46 @@ def stream():
     url = unquote(request.args.get('url'))  # Decode URL-encoded characters
     if not url:
         return jsonify({'error': 'URL parameter is required'}), 400
-    
-    # Check if client prefers redirect (for players that support it)
-    use_redirect = request.args.get('redirect', 'false').lower() == 'true'
 
     try:
+        # Check cache for HLS URL
         cached_stream = get_cached_stream(url)
-        if cached_stream:
-            stream_target = cached_stream
-            logging.info('Using cached stream URL for %s', url)
-        else:
-            logging.info('Cache miss for %s, resolving stream URL...', url)
-            stream_target = resolve_stream_url(url)
-            if not stream_target:
-                return jsonify({'error': 'No valid streams found'}), 404
-            set_cached_stream(url, stream_target)
         
-        # If redirect is requested and stream_target is a direct HLS URL, redirect
-        if use_redirect and stream_target.startswith('http'):
-            return redirect(stream_target, code=302)
-
-        # Since stream_target is already an HLS URL from --stream-url, 
-        # we need to pass the original YouTube URL to streamlink, not the resolved URL
-        # Otherwise streamlink can't handle the already-resolved HLS manifest
-        command = [
-            STREAMLINK_PATH,
-            url,  # Use original YouTube URL, not the cached HLS URL
-            STREAM_QUALITY,  # Use configured quality
-            '--hls-live-restart',
-            '--stdout'
-        ]
-
-        logging.info(f"Spawning streamlink with command: {' '.join(command)}")
+        if cached_stream:
+            # Fast path: Use cached HLS URL with ffmpeg
+            # ffmpeg will handle manifest updates automatically, so no expiry issues!
+            logging.info('Using cached HLS URL for %s (fast path)', url)
+            command = [
+                FFMPEG_PATH,
+                '-loglevel', 'error',  # Only show errors
+                '-i', cached_stream,    # Input: cached HLS URL
+                '-c', 'copy',           # Copy streams without re-encoding
+                '-f', 'mpegts',         # Output format
+                '-'                     # Output to stdout
+            ]
+            logging.info(f"Fast path: ffmpeg proxying cached HLS URL")
+        else:
+            # Slow path: Use streamlink to resolve URL
+            # This happens on cache miss or first request
+            logging.info('Cache miss for %s, using streamlink (slow path)', url)
+            command = [
+                STREAMLINK_PATH,
+                url,  # Use original YouTube URL
+                STREAM_QUALITY,
+                '--hls-live-restart',
+                '--stdout'
+            ]
+            logging.info(f"Slow path: streamlink resolving fresh URL")
+            
+            # After first chunk, update cache in background
+            # (This will make subsequent requests use fast path)
 
         # Start the subprocess
         process = subprocess.Popen(
             command, 
             stdout=subprocess.PIPE, 
             stderr=subprocess.PIPE,
-            bufsize=8192  # Increased buffer size
+            bufsize=8192
         )
         client_ip = request.remote_addr
 
@@ -422,20 +425,39 @@ def stream():
             try:
                 logging.info(f"Starting stream for client {client_ip} from {url}")
                 chunk_count = 0
+                first_chunk_time = time.time()
+                
                 while True:
-                    data = process.stdout.read(8192)  # Increased chunk size from 4096
+                    data = process.stdout.read(8192)
                     if not data:
                         # Check if process ended with error
                         return_code = process.poll()
                         if return_code is not None and return_code != 0:
                             stderr_output = process.stderr.read().decode('utf-8', errors='replace')
-                            logging.error(f"Streamlink process failed with code {return_code}: {stderr_output}")
+                            logging.error(f"Stream process failed with code {return_code}: {stderr_output}")
                         else:
                             logging.info(f"Stream ended normally for {client_ip}, sent {chunk_count} chunks")
                         break
+                    
                     chunk_count += 1
                     if chunk_count == 1:
-                        logging.info(f"First chunk sent to {client_ip}, stream is flowing")
+                        elapsed = time.time() - first_chunk_time
+                        logging.info(f"First chunk sent to {client_ip} in {elapsed:.2f}s, stream is flowing")
+                        
+                        # If we used streamlink (slow path), cache the result for next time
+                        if not cached_stream:
+                            # Resolve and cache in background thread so we don't block streaming
+                            def cache_in_background():
+                                try:
+                                    resolved_url = resolve_stream_url(url)
+                                    if resolved_url:
+                                        set_cached_stream(url, resolved_url)
+                                        logging.info(f"Background cached HLS URL for {url}")
+                                except Exception as e:
+                                    logging.error(f"Background caching failed: {e}")
+                            
+                            threading.Thread(target=cache_in_background, daemon=True).start()
+                    
                     yield data
             except GeneratorExit:
                 logging.info(f"Client {client_ip} disconnected from stream {url}")
