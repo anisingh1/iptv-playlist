@@ -136,4 +136,13 @@
         <group-title>Kids</group-title>
         <youtube-url>https://www.youtube.com/@disneyjr/live</youtube-url>
     </channel>
+
+    <channel>
+        <channel-name>Just For Laughs</channel-name>
+        <tvg-id>JustForLaughs.in</tvg-id>
+        <tvg-name>Just For Laughs</tvg-name>
+        <tvg-logo>logo/kids/Just_For_Laughs.png</tvg-logo>
+        <group-title>Comedy</group-title>
+        <youtube-url>https://www.youtube.com/@GAGSLIVE/live</youtube-url>
+    </channel>
 </channels>
