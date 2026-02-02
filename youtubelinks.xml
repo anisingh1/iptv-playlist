@@ -3,7 +3,7 @@
         <channel-name>Aaj Tak</channel-name>
         <tvg-id>AajTak.in</tvg-id>
         <tvg-name>Aaj Tak</tvg-name>
-        <tvg-logo>logo/hindi news/Aaj_Tak.png</tvg-logo>
+        <tvg-logo>logo/hindi_news/Aaj_Tak.png</tvg-logo>
         <group-title>Hindi News</group-title>
         <youtube-url>https://www.youtube.com/@aajtak/live</youtube-url>
     </channel>
@@ -11,7 +11,7 @@
         <channel-name>Times Now Navbharat</channel-name>
         <tvg-id>TimesNowNavbharat.in</tvg-id>
         <tvg-name>Times Now Navbharat</tvg-name>
-        <tvg-logo>logo/hindi news/Times_Now_Navbharat.png</tvg-logo>
+        <tvg-logo>logo/hindi_news/Times_Now_Navbharat.png</tvg-logo>
         <group-title>Hindi News</group-title>
         <youtube-url>https://www.youtube.com/@timesnownavbharat/live</youtube-url>
     </channel>
@@ -19,7 +19,7 @@
         <channel-name>ABP News</channel-name>
         <tvg-id>ABPNews.in</tvg-id>
         <tvg-name>ABP News</tvg-name>
-        <tvg-logo>logo/hindi news/ABP_News.png</tvg-logo>
+        <tvg-logo>logo/hindi_news/ABP_News.png</tvg-logo>
         <group-title>Hindi News</group-title>
         <youtube-url>https://www.youtube.com/@ABPNews/live</youtube-url>
     </channel>
@@ -27,7 +27,7 @@
         <channel-name>NDTV India</channel-name>
         <tvg-id>NDTVIndia.in</tvg-id>
         <tvg-name>NDTV India</tvg-name>
-        <tvg-logo>logo/hindi news/NDTV_India.png</tvg-logo>
+        <tvg-logo>logo/hindi_news/NDTV_India.png</tvg-logo>
         <group-title>Hindi News</group-title>
         <youtube-url>https://www.youtube.com/@ndtvindia/live</youtube-url>
     </channel>
@@ -35,7 +35,7 @@
         <channel-name>News 18 India</channel-name>
         <tvg-id>News18India.in</tvg-id>
         <tvg-name>News 18 India</tvg-name>
-        <tvg-logo>logo/hindi news/News_18_India.png</tvg-logo>
+        <tvg-logo>logo/hindi_news/News_18_India.png</tvg-logo>
         <group-title>Hindi News</group-title>
         <youtube-url>https://www.youtube.com/@news18india/live</youtube-url>
     </channel>
@@ -43,7 +43,7 @@
         <channel-name>News Nation</channel-name>
         <tvg-id>NewsNation.in</tvg-id>
         <tvg-name>News Nation</tvg-name>
-        <tvg-logo>logo/hindi news/News_Nation.jpg</tvg-logo>
+        <tvg-logo>logo/hindi_news/News_Nation.jpg</tvg-logo>
         <group-title>Hindi News</group-title>
         <youtube-url>https://www.youtube.com/@NewsNationTV/live</youtube-url>
     </channel>
@@ -51,7 +51,7 @@
         <channel-name>Republic Bharat</channel-name>
         <tvg-id>RepublicBharat.in</tvg-id>
         <tvg-name>Republic Bharat</tvg-name>
-        <tvg-logo>logo/hindi news/Republic_Bharat.jpg</tvg-logo>
+        <tvg-logo>logo/hindi_news/Republic_Bharat.jpg</tvg-logo>
         <group-title>Hindi News</group-title>
         <youtube-url>https://www.youtube.com/@RepublicBharat/live</youtube-url>
     </channel>
@@ -59,7 +59,7 @@
         <channel-name>TV9 Bharatvarsh</channel-name>
         <tvg-id>TV9Bharatvarsh.in</tvg-id>
         <tvg-name>TV9 Bharatvarsh</tvg-name>
-        <tvg-logo>logo/hindi news/TV9_Bharatvarsh.png</tvg-logo>
+        <tvg-logo>logo/hindi_news/TV9_Bharatvarsh.png</tvg-logo>
         <group-title>Hindi News</group-title>
         <youtube-url>https://www.youtube.com/@TV9Bharatvarsh/live</youtube-url>
     </channel>
@@ -67,7 +67,7 @@
         <channel-name>Zee News</channel-name>
         <tvg-id>ZeeNews.in</tvg-id>
         <tvg-name>Zee News</tvg-name>
-        <tvg-logo>logo/hindi news/Zee_News.png</tvg-logo>
+        <tvg-logo>logo/hindi_news/Zee_News.png</tvg-logo>
         <group-title>Hindi News</group-title>
         <youtube-url>https://www.youtube.com/@ZeeNews/live</youtube-url>
     </channel>
@@ -75,7 +75,7 @@
         <channel-name>DD News</channel-name>
         <tvg-id>DDNews.in</tvg-id>
         <tvg-name>DD News</tvg-name>
-        <tvg-logo>logo/hindi news/Zee_News.png</tvg-logo>
+        <tvg-logo>logo/hindi_news/Zee_News.png</tvg-logo>
         <group-title>Hindi News</group-title>
         <youtube-url>https://www.youtube.com/@DDnews/live</youtube-url>
     </channel>

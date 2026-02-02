@@ -35,10 +35,11 @@ DEFAULT_OUTPUT_M3U = 'youtubelive.m3u'
 DEFAULT_PORT = 6095
 DEFAULT_SYNC_INTERVAL_SECONDS = 86400
 SOURCE_XML_URL = 'https://github.com/anisingh1/iptv-playlist/blob/main/youtubelinks.xml'
+LOGO_BASE_URL = 'https://raw.githubusercontent.com/anisingh1/iptv-playlist/main/'  # Base URL for logo files
 CACHE_REFRESH_INTERVAL_SECONDS = 3600  # 1 hour (cache is only for monitoring/stats now)
 CACHE_TTL_SECONDS = 7200  # 2 hours (not critical since we don't use it for streaming)
 STARTUP_CACHE_ENABLED = True  # Pre-warm cache on startup
-STREAM_QUALITY = '720p'  # Stream quality (720p, 480p, 360p, best, worst)
+STREAM_QUALITY_PRIORITY = ['1080p', '720p', '480p']  # Try in order: 1080p first, fallback to 720p, then 480p
 
 REPO_ROOT = os.path.dirname(os.path.abspath(__file__))
 STREAM_CACHE = {}
@@ -99,53 +100,62 @@ def set_cached_stream(url, stream_url):
         }
 
 def resolve_stream_url(youtube_url):
-    """Resolve a stream URL using Streamlink (optimized for speed)."""
-    try:
-        # Optimized: removed --loglevel debug, use --stream-url for direct URL extraction
-        info_command = [STREAMLINK_PATH, '--stream-url', youtube_url, STREAM_QUALITY]
-        info_process = subprocess.Popen(
-            info_command, 
-            stdout=subprocess.PIPE, 
-            stderr=subprocess.PIPE,
-            env={**os.environ, 'PYTHONIOENCODING': 'utf-8'}
-        )
-        info_output, info_error = info_process.communicate(timeout=15)
+    """Resolve a stream URL using Streamlink with quality fallback (1080p → 720p → 480p)."""
+    # Try each quality in priority order
+    for quality in STREAM_QUALITY_PRIORITY:
+        try:
+            logging.info(f'Trying {quality} for {youtube_url}')
+            info_command = [STREAMLINK_PATH, '--stream-url', youtube_url, quality]
+            info_process = subprocess.Popen(
+                info_command, 
+                stdout=subprocess.PIPE, 
+                stderr=subprocess.PIPE,
+                env={**os.environ, 'PYTHONIOENCODING': 'utf-8'}
+            )
+            info_output, info_error = info_process.communicate(timeout=15)
 
-        if info_process.returncode != 0:
-            error_msg = info_error.decode('utf-8', errors='replace')
-            logging.error(f'Streamlink error for {youtube_url}: {error_msg}')
-            
-            # Fallback to yt-dlp (faster than youtube-dl)
-            if 'youtube.com' in youtube_url.lower() or 'youtu.be' in youtube_url.lower():
-                try:
-                    yt_command = [YT_DLP_PATH, '--get-url', '--no-warnings', youtube_url]
-                    yt_process = subprocess.Popen(
-                        yt_command, 
-                        stdout=subprocess.PIPE, 
-                        stderr=subprocess.PIPE,
-                        env={**os.environ, 'PYTHONIOENCODING': 'utf-8'}
-                    )
-                    yt_url, yt_error = yt_process.communicate(timeout=15)
-
-                    if yt_process.returncode == 0:
-                        urls = yt_url.decode('utf-8', errors='replace').strip().split('\n')
-                        # Return the first URL (usually video+audio combined)
-                        return urls[0] if urls else None
+            if info_process.returncode == 0:
+                stream_url = info_output.decode('utf-8', errors='replace').strip()
+                if stream_url:
+                    logging.info(f'✓ Successfully resolved {quality} for {youtube_url}')
+                    return stream_url
                     
-                    logging.error(f"yt-dlp error: {yt_error.decode('utf-8', errors='replace')}")
-                except (subprocess.TimeoutExpired, Exception) as e:
-                    logging.error(f'yt-dlp fallback failed: {e}')
-            return None
+            # If this quality failed, log it and try next
+            error_msg = info_error.decode('utf-8', errors='replace')
+            logging.warning(f'{quality} not available for {youtube_url}: {error_msg[:100]}')
+            
+        except subprocess.TimeoutExpired:
+            logging.warning(f'Timeout resolving {quality} for {youtube_url}, trying next quality')
+            continue
+        except Exception as exc:
+            logging.warning(f'Error resolving {quality} for {youtube_url}: {str(exc)}')
+            continue
+    
+    # If all qualities failed, try yt-dlp as last resort
+    logging.warning(f'All qualities failed for {youtube_url}, trying yt-dlp fallback')
+    if 'youtube.com' in youtube_url.lower() or 'youtu.be' in youtube_url.lower():
+        try:
+            yt_command = [YT_DLP_PATH, '--get-url', '--no-warnings', youtube_url]
+            yt_process = subprocess.Popen(
+                yt_command, 
+                stdout=subprocess.PIPE, 
+                stderr=subprocess.PIPE,
+                env={**os.environ, 'PYTHONIOENCODING': 'utf-8'}
+            )
+            yt_url, yt_error = yt_process.communicate(timeout=15)
 
-        stream_url = info_output.decode('utf-8', errors='replace').strip()
-        return stream_url if stream_url else None
-        
-    except subprocess.TimeoutExpired:
-        logging.error(f'Timeout resolving stream URL for {youtube_url}')
-        return None
-    except Exception as exc:
-        logging.error(f'Error resolving stream URL for {youtube_url}: {str(exc)}')
-        return None
+            if yt_process.returncode == 0:
+                urls = yt_url.decode('utf-8', errors='replace').strip().split('\n')
+                if urls:
+                    logging.info(f'✓ yt-dlp fallback succeeded for {youtube_url}')
+                    return urls[0]
+            
+            logging.error(f"yt-dlp error: {yt_error.decode('utf-8', errors='replace')}")
+        except (subprocess.TimeoutExpired, Exception) as e:
+            logging.error(f'yt-dlp fallback failed: {e}')
+    
+    logging.error(f'Failed to resolve any quality for {youtube_url}')
+    return None
 
 def refresh_stream_cache_loop(interval_seconds, run_immediately=True):
     """Refresh cached stream URLs on a schedule."""
@@ -352,10 +362,15 @@ def generate_m3u_from_xml(input_xml, output_m3u, host_ip, port):
         with open(output_m3u, 'w', encoding='utf-8') as m3u:
             m3u.write('#EXTM3U\n')
             for channel in channels:
+                # Prepend GitHub raw URL to logo if it's a relative path
+                logo = channel['tvg-logo']
+                if logo and not logo.startswith('http'):
+                    logo = LOGO_BASE_URL + logo
+                
                 m3u.write(
                     f'#EXTINF:-1 tvg-id="{channel["tvg-id"]}" '
                     f'tvg-name="{channel["tvg-name"]}" '
-                    f'tvg-logo="{channel["tvg-logo"]}" '
+                    f'tvg-logo="{logo}" '
                     f'group-title="{channel["group-title"]}",'
                     f'{channel["name"]}\n'
                 )
@@ -400,14 +415,16 @@ def stream():
             # Slow path: Use streamlink to resolve URL
             # This happens on cache miss or first request
             logging.info('Cache miss for %s, using streamlink (slow path)', url)
+            # Use comma-separated quality list for fallback (1080p,720p,480p)
+            quality_fallback = ','.join(STREAM_QUALITY_PRIORITY)
             command = [
                 STREAMLINK_PATH,
                 url,  # Use original YouTube URL
-                STREAM_QUALITY,
+                quality_fallback,  # Try 1080p, fallback to 720p, then 480p
                 '--hls-live-restart',
                 '--stdout'
             ]
-            logging.info(f"Slow path: streamlink resolving fresh URL")
+            logging.info(f"Slow path: streamlink with quality fallback {quality_fallback}")
             
             # After first chunk, update cache in background
             # (This will make subsequent requests use fast path)

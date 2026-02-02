@@ -187,10 +187,20 @@ Edit these constants in `youtube-live.py`:
 
 ```python
 DEFAULT_PORT = 6095  # Server port
-CACHE_TTL_SECONDS = 3600  # Cache lifetime (1 hour)
+CACHE_TTL_SECONDS = 7200  # Cache lifetime (2 hours)
 CACHE_REFRESH_INTERVAL_SECONDS = 3600  # Cache refresh interval (1 hour)
 STARTUP_CACHE_ENABLED = True  # Pre-warm cache on startup
+STREAM_QUALITY_PRIORITY = ['1080p', '720p', '480p']  # Quality fallback order
 ```
+
+### Stream Quality Fallback
+
+The server automatically tries qualities in order:
+- **1080p** first (best quality, ~5-8 Mbps)
+- **720p** if 1080p unavailable (good balance, ~3-5 Mbps)  
+- **480p** if 720p unavailable (lower bandwidth, ~1-2 Mbps)
+
+Customize by editing `STREAM_QUALITY_PRIORITY` list in the code.
 
 ## Troubleshooting
 
