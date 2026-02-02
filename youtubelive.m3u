@@ -1,23 +1,23 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="AajTak.in" tvg-name="Aaj Tak" tvg-logo="https://raw.githubusercontent.com/anisingh1/iptv-playlist/main/logo/hindi_news/Aaj_Tak.png" group-title="Hindi News",Aaj Tak
+#EXTINF:-1 tvg-id="AajTak.in" tvg-name="Aaj Tak" tvg-logo="https://raw.githubusercontent.com/anisingh1/iptv-playlist/main/logo/hindi news/Aaj_Tak.png" group-title="Hindi News",Aaj Tak
 http://192.168.1.16:6095/stream?url=https://www.youtube.com/%40aajtak/live
-#EXTINF:-1 tvg-id="TimesNowNavbharat.in" tvg-name="Times Now Navbharat" tvg-logo="https://raw.githubusercontent.com/anisingh1/iptv-playlist/main/logo/hindi_news/Times_Now_Navbharat.png" group-title="Hindi News",Times Now Navbharat
+#EXTINF:-1 tvg-id="TimesNowNavbharat.in" tvg-name="Times Now Navbharat" tvg-logo="https://raw.githubusercontent.com/anisingh1/iptv-playlist/main/logo/hindi news/Times_Now_Navbharat.png" group-title="Hindi News",Times Now Navbharat
 http://192.168.1.16:6095/stream?url=https://www.youtube.com/%40timesnownavbharat/live
-#EXTINF:-1 tvg-id="ABPNews.in" tvg-name="ABP News" tvg-logo="https://raw.githubusercontent.com/anisingh1/iptv-playlist/main/logo/hindi_news/ABP_News.png" group-title="Hindi News",ABP News
+#EXTINF:-1 tvg-id="ABPNews.in" tvg-name="ABP News" tvg-logo="https://raw.githubusercontent.com/anisingh1/iptv-playlist/main/logo/hindi news/ABP_News.png" group-title="Hindi News",ABP News
 http://192.168.1.16:6095/stream?url=https://www.youtube.com/%40ABPNews/live
-#EXTINF:-1 tvg-id="NDTVIndia.in" tvg-name="NDTV India" tvg-logo="https://raw.githubusercontent.com/anisingh1/iptv-playlist/main/logo/hindi_news/NDTV_India.png" group-title="Hindi News",NDTV India
+#EXTINF:-1 tvg-id="NDTVIndia.in" tvg-name="NDTV India" tvg-logo="https://raw.githubusercontent.com/anisingh1/iptv-playlist/main/logo/hindi news/NDTV_India.png" group-title="Hindi News",NDTV India
 http://192.168.1.16:6095/stream?url=https://www.youtube.com/%40ndtvindia/live
-#EXTINF:-1 tvg-id="News18India.in" tvg-name="News 18 India" tvg-logo="https://raw.githubusercontent.com/anisingh1/iptv-playlist/main/logo/hindi_news/News_18_India.png" group-title="Hindi News",News 18 India
+#EXTINF:-1 tvg-id="News18India.in" tvg-name="News 18 India" tvg-logo="https://raw.githubusercontent.com/anisingh1/iptv-playlist/main/logo/hindi news/News_18_India.png" group-title="Hindi News",News 18 India
 http://192.168.1.16:6095/stream?url=https://www.youtube.com/%40news18india/live
-#EXTINF:-1 tvg-id="NewsNation.in" tvg-name="News Nation" tvg-logo="https://raw.githubusercontent.com/anisingh1/iptv-playlist/main/logo/hindi_news/News_Nation.jpg" group-title="Hindi News",News Nation
+#EXTINF:-1 tvg-id="NewsNation.in" tvg-name="News Nation" tvg-logo="https://raw.githubusercontent.com/anisingh1/iptv-playlist/main/logo/hindi news/News_Nation.jpg" group-title="Hindi News",News Nation
 http://192.168.1.16:6095/stream?url=https://www.youtube.com/%40NewsNationTV/live
-#EXTINF:-1 tvg-id="RepublicBharat.in" tvg-name="Republic Bharat" tvg-logo="https://raw.githubusercontent.com/anisingh1/iptv-playlist/main/logo/hindi_news/Republic_Bharat.jpg" group-title="Hindi News",Republic Bharat
+#EXTINF:-1 tvg-id="RepublicBharat.in" tvg-name="Republic Bharat" tvg-logo="https://raw.githubusercontent.com/anisingh1/iptv-playlist/main/logo/hindi news/Republic_Bharat.jpg" group-title="Hindi News",Republic Bharat
 http://192.168.1.16:6095/stream?url=https://www.youtube.com/%40RepublicBharat/live
-#EXTINF:-1 tvg-id="TV9Bharatvarsh.in" tvg-name="TV9 Bharatvarsh" tvg-logo="https://raw.githubusercontent.com/anisingh1/iptv-playlist/main/logo/hindi_news/TV9_Bharatvarsh.png" group-title="Hindi News",TV9 Bharatvarsh
+#EXTINF:-1 tvg-id="TV9Bharatvarsh.in" tvg-name="TV9 Bharatvarsh" tvg-logo="https://raw.githubusercontent.com/anisingh1/iptv-playlist/main/logo/hindi news/TV9_Bharatvarsh.png" group-title="Hindi News",TV9 Bharatvarsh
 http://192.168.1.16:6095/stream?url=https://www.youtube.com/%40TV9Bharatvarsh/live
-#EXTINF:-1 tvg-id="ZeeNews.in" tvg-name="Zee News" tvg-logo="https://raw.githubusercontent.com/anisingh1/iptv-playlist/main/logo/hindi_news/Zee_News.png" group-title="Hindi News",Zee News
+#EXTINF:-1 tvg-id="ZeeNews.in" tvg-name="Zee News" tvg-logo="https://raw.githubusercontent.com/anisingh1/iptv-playlist/main/logo/hindi news/Zee_News.png" group-title="Hindi News",Zee News
 http://192.168.1.16:6095/stream?url=https://www.youtube.com/%40ZeeNews/live
-#EXTINF:-1 tvg-id="DDNews.in" tvg-name="DD News" tvg-logo="https://raw.githubusercontent.com/anisingh1/iptv-playlist/main/logo/hindi_news/Zee_News.png" group-title="Hindi News",DD News
+#EXTINF:-1 tvg-id="DDNews.in" tvg-name="DD News" tvg-logo="https://raw.githubusercontent.com/anisingh1/iptv-playlist/main/logo/hindi news/Zee_News.png" group-title="Hindi News",DD News
 http://192.168.1.16:6095/stream?url=https://www.youtube.com/%40DDnews/live
 #EXTINF:-1 tvg-id="CartoonNetwork.in" tvg-name="Cartoon Network" tvg-logo="https://raw.githubusercontent.com/anisingh1/iptv-playlist/main/logo/kids/Cartoon_Network.png" group-title="Kids",Cartoon Network
 http://192.168.1.16:6095/stream?url=https://www.youtube.com/%40AdventureTime/live
