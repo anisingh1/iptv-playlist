@@ -33,3 +33,5 @@ http://192.168.1.16:6095/stream?url=https://www.youtube.com/%40disneykids/live
 http://192.168.1.16:6095/stream?url=https://www.youtube.com/%40disneychannelanimation/live
 #EXTINF:-1 tvg-id="DisneyJunior.in" tvg-name="Disney Junior" tvg-logo="https://raw.githubusercontent.com/anisingh1/iptv-playlist/main/logo/kids/Disney_Junior.png" group-title="Kids",Disney Junior
 http://192.168.1.16:6095/stream?url=https://www.youtube.com/%40disneyjr/live
+#EXTINF:-1 tvg-id="JustForLaughs.in" tvg-name="Just For Laughs" tvg-logo="https://raw.githubusercontent.com/anisingh1/iptv-playlist/main/logo/kids/Just_For_Laughs.png" group-title="Comedy",Just For Laughs
+http://192.168.1.16:6095/stream?url=https://www.youtube.com/%40GAGSLIVE/live
