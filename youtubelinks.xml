@@ -141,8 +141,98 @@
         <channel-name>Just For Laughs</channel-name>
         <tvg-id>JustForLaughs.in</tvg-id>
         <tvg-name>Just For Laughs</tvg-name>
-        <tvg-logo>logo/kids/Just_For_Laughs.png</tvg-logo>
+        <tvg-logo>logo/comedy/Just_For_Laughs.png</tvg-logo>
         <group-title>Comedy</group-title>
         <youtube-url>https://www.youtube.com/@GAGSLIVE/live</youtube-url>
+    </channel>
+    <channel>
+        <channel-name>Classic Mr Bean</channel-name>
+        <tvg-id>ClassicMrBean.in</tvg-id>
+        <tvg-name>Classic Mr Bean</tvg-name>
+        <tvg-logo>logo/comedy/Classic_Mr_Bean.png</tvg-logo>
+        <group-title>Comedy</group-title>
+        <youtube-url>https://www.youtube.com/@ClassicMrBean/live</youtube-url>
+    </channel>
+
+    <channel>
+        <channel-name>NatGeo</channel-name>
+        <tvg-id>NatGeo.in</tvg-id>
+        <tvg-name>NatGeo</tvg-name>
+        <tvg-logo>logo/documentary/NatGeo.png</tvg-logo>
+        <group-title>Documentary</group-title>
+        <youtube-url>https://www.youtube.com/@NatGeo/live</youtube-url>
+    </channel>
+    <channel>
+        <channel-name>NatGeo Animals</channel-name>
+        <tvg-id>NatGeoAnimals.in</tvg-id>
+        <tvg-name>NatGeo Animals</tvg-name>
+        <tvg-logo>logo/documentary/NatGeo_Animals.png</tvg-logo>
+        <group-title>Documentary</group-title>
+        <youtube-url>https://www.youtube.com/@NatGeoAnimals/live</youtube-url>
+    </channel>
+    <channel>
+        <channel-name>Discovery</channel-name>
+        <tvg-id>Discovery.in</tvg-id>
+        <tvg-name>Discovery</tvg-name>
+        <tvg-logo>logo/documentary/Discovery.png</tvg-logo>
+        <group-title>Documentary</group-title>
+        <youtube-url>https://www.youtube.com/@discovery/live</youtube-url>
+    </channel>
+    <channel>
+        <channel-name>Animal Planet</channel-name>
+        <tvg-id>AnimalPlanet.in</tvg-id>
+        <tvg-name>Animal Planet</tvg-name>
+        <tvg-logo>logo/documentary/Animal_Planet.png</tvg-logo>
+        <group-title>Documentary</group-title>
+        <youtube-url>https://www.youtube.com/@animalplanet/live</youtube-url>
+    </channel>
+    <channel>
+        <channel-name>BBC Timestamp</channel-name>
+        <tvg-id>BBCTimestamp.in</tvg-id>
+        <tvg-name>BBC Timestamp</tvg-name>
+        <tvg-logo>logo/documentary/BBC_Timestamp.png</tvg-logo>
+        <group-title>Documentary</group-title>
+        <youtube-url>https://www.youtube.com/@BBCTimestamp/live</youtube-url>
+    </channel>
+    <channel>
+        <channel-name>BBC Earth</channel-name>
+        <tvg-id>BBCEarth.in</tvg-id>
+        <tvg-name>BBC Earth</tvg-name>
+        <tvg-logo>logo/documentary/BBC_Earth.png</tvg-logo>
+        <group-title>Documentary</group-title>
+        <youtube-url>https://www.youtube.com/@bbcearth/live</youtube-url>
+    </channel>
+    <channel>
+        <channel-name>BBC Timeline</channel-name>
+        <tvg-id>BBCTimeline.in</tvg-id>
+        <tvg-name>BBC Timeline</tvg-name>
+        <tvg-logo>logo/documentary/BBC_Timeline.png</tvg-logo>
+        <group-title>Documentary</group-title>
+        <youtube-url>https://www.youtube.com/@TimelineChannel/live</youtube-url>
+    </channel>
+
+    <channel>
+        <channel-name>Travel Channel</channel-name>
+        <tvg-id>TravelChannel.in</tvg-id>
+        <tvg-name>Travel Channel</tvg-name>
+        <tvg-logo>logo/lifestyle/Travel_Channel.png</tvg-logo>
+        <group-title>Lifestyle</group-title>
+        <youtube-url>https://www.youtube.com/@TravelChannel/live</youtube-url>
+    </channel>
+    <channel>
+        <channel-name>Euronews Travel</channel-name>
+        <tvg-id>EuronewsTravel.in</tvg-id>
+        <tvg-name>Euronews Travel</tvg-name>
+        <tvg-logo>logo/lifestyle/Euronews_Travel.png</tvg-logo>
+        <group-title>Lifestyle</group-title>
+        <youtube-url>https://www.youtube.com/@euronewstravel/live</youtube-url>
+    </channel>
+    <channel>
+        <channel-name>Food Network</channel-name>
+        <tvg-id>FoodNetwork.in</tvg-id>
+        <tvg-name>Food Network</tvg-name>
+        <tvg-logo>logo/lifestyle/Food_Network.png</tvg-logo>
+        <group-title>Lifestyle</group-title>
+        <youtube-url>https://www.youtube.com/@FoodNetwork/live</youtube-url>
     </channel>
 </channels>
