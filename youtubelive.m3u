@@ -1,59 +1,59 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="AajTak.in" tvg-name="Aaj Tak" tvg-logo="https://raw.githubusercontent.com/anisingh1/iptv-playlist/main/logo/hindi_news/Aaj_Tak.png" group-title="Hindi News",Aaj Tak
-http://192.168.1.7:6095/stream?url=https://www.youtube.com/%40aajtak/live
+http://10.172.171.42:6095/stream?url=https://www.youtube.com/%40aajtak/live
 #EXTINF:-1 tvg-id="TimesNowNavbharat.in" tvg-name="Times Now Navbharat" tvg-logo="https://raw.githubusercontent.com/anisingh1/iptv-playlist/main/logo/hindi_news/Times_Now_Navbharat.png" group-title="Hindi News",Times Now Navbharat
-http://192.168.1.7:6095/stream?url=https://www.youtube.com/%40timesnownavbharat/live
+http://10.172.171.42:6095/stream?url=https://www.youtube.com/%40timesnownavbharat/live
 #EXTINF:-1 tvg-id="ABPNews.in" tvg-name="ABP News" tvg-logo="https://raw.githubusercontent.com/anisingh1/iptv-playlist/main/logo/hindi_news/ABP_News.png" group-title="Hindi News",ABP News
-http://192.168.1.7:6095/stream?url=https://www.youtube.com/%40ABPNews/live
+http://10.172.171.42:6095/stream?url=https://www.youtube.com/%40ABPNews/live
 #EXTINF:-1 tvg-id="NDTVIndia.in" tvg-name="NDTV India" tvg-logo="https://raw.githubusercontent.com/anisingh1/iptv-playlist/main/logo/hindi_news/NDTV_India.png" group-title="Hindi News",NDTV India
-http://192.168.1.7:6095/stream?url=https://www.youtube.com/%40ndtvindia/live
+http://10.172.171.42:6095/stream?url=https://www.youtube.com/%40ndtvindia/live
 #EXTINF:-1 tvg-id="News18India.in" tvg-name="News 18 India" tvg-logo="https://raw.githubusercontent.com/anisingh1/iptv-playlist/main/logo/hindi_news/News_18_India.png" group-title="Hindi News",News 18 India
-http://192.168.1.7:6095/stream?url=https://www.youtube.com/%40news18india/live
+http://10.172.171.42:6095/stream?url=https://www.youtube.com/%40news18india/live
 #EXTINF:-1 tvg-id="NewsNation.in" tvg-name="News Nation" tvg-logo="https://raw.githubusercontent.com/anisingh1/iptv-playlist/main/logo/hindi_news/News_Nation.jpg" group-title="Hindi News",News Nation
-http://192.168.1.7:6095/stream?url=https://www.youtube.com/%40NewsNationTV/live
+http://10.172.171.42:6095/stream?url=https://www.youtube.com/%40NewsNationTV/live
 #EXTINF:-1 tvg-id="RepublicBharat.in" tvg-name="Republic Bharat" tvg-logo="https://raw.githubusercontent.com/anisingh1/iptv-playlist/main/logo/hindi_news/Republic_Bharat.jpg" group-title="Hindi News",Republic Bharat
-http://192.168.1.7:6095/stream?url=https://www.youtube.com/%40RepublicBharat/live
+http://10.172.171.42:6095/stream?url=https://www.youtube.com/%40RepublicBharat/live
 #EXTINF:-1 tvg-id="TV9Bharatvarsh.in" tvg-name="TV9 Bharatvarsh" tvg-logo="https://raw.githubusercontent.com/anisingh1/iptv-playlist/main/logo/hindi_news/TV9_Bharatvarsh.png" group-title="Hindi News",TV9 Bharatvarsh
-http://192.168.1.7:6095/stream?url=https://www.youtube.com/%40TV9Bharatvarsh/live
+http://10.172.171.42:6095/stream?url=https://www.youtube.com/%40TV9Bharatvarsh/live
 #EXTINF:-1 tvg-id="ZeeNews.in" tvg-name="Zee News" tvg-logo="https://raw.githubusercontent.com/anisingh1/iptv-playlist/main/logo/hindi_news/Zee_News.png" group-title="Hindi News",Zee News
-http://192.168.1.7:6095/stream?url=https://www.youtube.com/%40ZeeNews/live
+http://10.172.171.42:6095/stream?url=https://www.youtube.com/%40ZeeNews/live
 #EXTINF:-1 tvg-id="DDNews.in" tvg-name="DD News" tvg-logo="https://raw.githubusercontent.com/anisingh1/iptv-playlist/main/logo/hindi_news/Zee_News.png" group-title="Hindi News",DD News
-http://192.168.1.7:6095/stream?url=https://www.youtube.com/%40DDnews/live
+http://10.172.171.42:6095/stream?url=https://www.youtube.com/%40DDnews/live
 #EXTINF:-1 tvg-id="CartoonNetwork.in" tvg-name="Cartoon Network" tvg-logo="https://raw.githubusercontent.com/anisingh1/iptv-playlist/main/logo/kids/Cartoon_Network.png" group-title="Kids",Cartoon Network
-http://192.168.1.7:6095/stream?url=https://www.youtube.com/%40AdventureTime/live
+http://10.172.171.42:6095/stream?url=https://www.youtube.com/%40AdventureTime/live
 #EXTINF:-1 tvg-id="BoomerangUK.in" tvg-name="Boomerang UK" tvg-logo="https://raw.githubusercontent.com/anisingh1/iptv-playlist/main/logo/kids/Boomerang_UK.png" group-title="Kids",Boomerang UK
-http://192.168.1.7:6095/stream?url=https://www.youtube.com/%40BoomerangUK/live
+http://10.172.171.42:6095/stream?url=https://www.youtube.com/%40BoomerangUK/live
 #EXTINF:-1 tvg-id="Cartoonito.in" tvg-name="Cartoonito" tvg-logo="https://raw.githubusercontent.com/anisingh1/iptv-playlist/main/logo/kids/Cartoonito.png" group-title="Kids",Cartoonito
-http://192.168.1.7:6095/stream?url=https://www.youtube.com/%40cartoonito/live
+http://10.172.171.42:6095/stream?url=https://www.youtube.com/%40cartoonito/live
 #EXTINF:-1 tvg-id="WarnerBrosClassics.in" tvg-name="Warner Bros Classics" tvg-logo="https://raw.githubusercontent.com/anisingh1/iptv-playlist/main/logo/kids/Warner_Bros_Classics.png" group-title="Kids",Warner Bros Classics
-http://192.168.1.7:6095/stream?url=https://www.youtube.com/%40warnerbrosclassics/live
+http://10.172.171.42:6095/stream?url=https://www.youtube.com/%40warnerbrosclassics/live
 #EXTINF:-1 tvg-id="DisneyKids.in" tvg-name="Disney Kids" tvg-logo="https://raw.githubusercontent.com/anisingh1/iptv-playlist/main/logo/kids/Disney_Kids.png" group-title="Kids",Disney Kids
-http://192.168.1.7:6095/stream?url=https://www.youtube.com/%40disneykids/live
+http://10.172.171.42:6095/stream?url=https://www.youtube.com/%40disneykids/live
 #EXTINF:-1 tvg-id="DisneyChannelAnimation.in" tvg-name="Disney Channel Animation" tvg-logo="https://raw.githubusercontent.com/anisingh1/iptv-playlist/main/logo/kids/Disney_Channel_Animation.png" group-title="Kids",Disney Channel Animation
-http://192.168.1.7:6095/stream?url=https://www.youtube.com/%40disneychannelanimation/live
+http://10.172.171.42:6095/stream?url=https://www.youtube.com/%40disneychannelanimation/live
 #EXTINF:-1 tvg-id="DisneyJunior.in" tvg-name="Disney Junior" tvg-logo="https://raw.githubusercontent.com/anisingh1/iptv-playlist/main/logo/kids/Disney_Junior.png" group-title="Kids",Disney Junior
-http://192.168.1.7:6095/stream?url=https://www.youtube.com/%40disneyjr/live
+http://10.172.171.42:6095/stream?url=https://www.youtube.com/%40disneyjr/live
 #EXTINF:-1 tvg-id="JustForLaughs.in" tvg-name="Just For Laughs" tvg-logo="https://raw.githubusercontent.com/anisingh1/iptv-playlist/main/logo/comedy/Just_For_Laughs.png" group-title="Comedy",Just For Laughs
-http://192.168.1.7:6095/stream?url=https://www.youtube.com/%40GAGSLIVE/live
+http://10.172.171.42:6095/stream?url=https://www.youtube.com/%40GAGSLIVE/live
 #EXTINF:-1 tvg-id="ClassicMrBean.in" tvg-name="Classic Mr Bean" tvg-logo="https://raw.githubusercontent.com/anisingh1/iptv-playlist/main/logo/comedy/Classic_Mr_Bean.png" group-title="Comedy",Classic Mr Bean
-http://192.168.1.7:6095/stream?url=https://www.youtube.com/%40ClassicMrBean/live
+http://10.172.171.42:6095/stream?url=https://www.youtube.com/%40ClassicMrBean/live
 #EXTINF:-1 tvg-id="NatGeo.in" tvg-name="NatGeo" tvg-logo="https://raw.githubusercontent.com/anisingh1/iptv-playlist/main/logo/documentary/NatGeo.png" group-title="Documentary",NatGeo
-http://192.168.1.7:6095/stream?url=https://www.youtube.com/%40NatGeo/live
+http://10.172.171.42:6095/stream?url=https://www.youtube.com/%40NatGeo/live
 #EXTINF:-1 tvg-id="NatGeoAnimals.in" tvg-name="NatGeo Animals" tvg-logo="https://raw.githubusercontent.com/anisingh1/iptv-playlist/main/logo/documentary/NatGeo_Animals.png" group-title="Documentary",NatGeo Animals
-http://192.168.1.7:6095/stream?url=https://www.youtube.com/%40NatGeoAnimals/live
+http://10.172.171.42:6095/stream?url=https://www.youtube.com/%40NatGeoAnimals/live
 #EXTINF:-1 tvg-id="Discovery.in" tvg-name="Discovery" tvg-logo="https://raw.githubusercontent.com/anisingh1/iptv-playlist/main/logo/documentary/Discovery.png" group-title="Documentary",Discovery
-http://192.168.1.7:6095/stream?url=https://www.youtube.com/%40discovery/live
+http://10.172.171.42:6095/stream?url=https://www.youtube.com/%40discovery/live
 #EXTINF:-1 tvg-id="AnimalPlanet.in" tvg-name="Animal Planet" tvg-logo="https://raw.githubusercontent.com/anisingh1/iptv-playlist/main/logo/documentary/Animal_Planet.png" group-title="Documentary",Animal Planet
-http://192.168.1.7:6095/stream?url=https://www.youtube.com/%40animalplanet/live
+http://10.172.171.42:6095/stream?url=https://www.youtube.com/%40animalplanet/live
 #EXTINF:-1 tvg-id="BBCTimestamp.in" tvg-name="BBC Timestamp" tvg-logo="https://raw.githubusercontent.com/anisingh1/iptv-playlist/main/logo/documentary/BBC_Timestamp.png" group-title="Documentary",BBC Timestamp
-http://192.168.1.7:6095/stream?url=https://www.youtube.com/%40BBCTimestamp/live
+http://10.172.171.42:6095/stream?url=https://www.youtube.com/%40BBCTimestamp/live
 #EXTINF:-1 tvg-id="BBCEarth.in" tvg-name="BBC Earth" tvg-logo="https://raw.githubusercontent.com/anisingh1/iptv-playlist/main/logo/documentary/BBC_Earth.png" group-title="Documentary",BBC Earth
-http://192.168.1.7:6095/stream?url=https://www.youtube.com/%40bbcearth/live
+http://10.172.171.42:6095/stream?url=https://www.youtube.com/%40bbcearth/live
 #EXTINF:-1 tvg-id="BBCTimeline.in" tvg-name="BBC Timeline" tvg-logo="https://raw.githubusercontent.com/anisingh1/iptv-playlist/main/logo/documentary/BBC_Timeline.png" group-title="Documentary",BBC Timeline
-http://192.168.1.7:6095/stream?url=https://www.youtube.com/%40TimelineChannel/live
+http://10.172.171.42:6095/stream?url=https://www.youtube.com/%40TimelineChannel/live
 #EXTINF:-1 tvg-id="TravelChannel.in" tvg-name="Travel Channel" tvg-logo="https://raw.githubusercontent.com/anisingh1/iptv-playlist/main/logo/lifestyle/Travel_Channel.png" group-title="Lifestyle",Travel Channel
-http://192.168.1.7:6095/stream?url=https://www.youtube.com/%40TravelChannel/live
+http://10.172.171.42:6095/stream?url=https://www.youtube.com/%40TravelChannel/live
 #EXTINF:-1 tvg-id="EuronewsTravel.in" tvg-name="Euronews Travel" tvg-logo="https://raw.githubusercontent.com/anisingh1/iptv-playlist/main/logo/lifestyle/Euronews_Travel.png" group-title="Lifestyle",Euronews Travel
-http://192.168.1.7:6095/stream?url=https://www.youtube.com/%40euronewstravel/live
+http://10.172.171.42:6095/stream?url=https://www.youtube.com/%40euronewstravel/live
 #EXTINF:-1 tvg-id="FoodNetwork.in" tvg-name="Food Network" tvg-logo="https://raw.githubusercontent.com/anisingh1/iptv-playlist/main/logo/lifestyle/Food_Network.png" group-title="Lifestyle",Food Network
-http://192.168.1.7:6095/stream?url=https://www.youtube.com/%40FoodNetwork/live
+http://10.172.171.42:6095/stream?url=https://www.youtube.com/%40FoodNetwork/live
