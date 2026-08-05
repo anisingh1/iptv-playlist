@@ -8,14 +8,14 @@ https://nw18live.cdn.jio.com/bpk-tv/News18_India_NW18_MOB/output01/index.m3u8?__
 #EXTINF:-1 tvg-id="NDTV INDIA" tvg-logo="https://i.imgur.com/PyDjUZB.png" group-title="Hindi News",NDTV India
 https://ndtvindiaelemarchana.akamaized.net/hls/live/2003679-b/ndtvindia/master.m3u8
 #EXTINF:-1 tvg-id="NEWS NATION" tvg-logo="https://i.imgur.com/9xeIWqm.png"  group-title="Hindi News",News Nation
-https://restv4-as.ott.kaltura.com/api_v3/service/assetFile/action/playManifest/partnerId/487/assetId/678533/assetType/media/assetFileId/15558311/contextType/PLAYBACK/isAltUrl/False/a.m3u8
+https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/6cd2f649739a45ca9de1daf81cc7d0f2/index.m3u8
 #EXTINF:-1 tvg-id="ABPNews.in" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/ABP_News_logo.svg/512px-ABP_News_logo.svg.png" group-title="Hindi News",ABP News
-https://abplivetv.akamaized.net/hls/live/2043010/hindi/master.m3u8
+https://d1rc86nwwc9fag.cloudfront.net/vglive-sk-472500/abpnews/master.m3u8
 #EXTINF:-1 tvg-id="INDIA TV" tvg-logo="https://a.jsrdn.com/hls/23084/india-tv/logo_20220825_164753_68.png"  group-title="Hindi News",India TV
 https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/india-tv/master.m3u8
 #EXTINF:-1 tvg-id="REPUBLICBHARAT" tvg-logo="https://www.examsegg.com/wp-content/uploads/2021/02/republic-bharat-logo-e1613310592185.jpg"  group-title="Hindi News",Republic Bharat
-https://webliverb.republicworld.com/httppush/ottrb_republic_hindi/ottrb/master.m3u8?e=1651431600&h=f66a60a21c8b02a8690d98c6c5fda5bb
+https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/in/YuppTV/RepublicBharat.m3u8
 #EXTINF:-1 tvg-id="ZEE NEWS" tvg-logo="http://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/wdPs8bpF.png"  group-title="Hindi News",Zee News
-https://news.codeautoplay.workers.dev/?codeby=nd&channel=zeenews
+https://vg-zeefta.akamaized.net/ptnr-yupptv/title-zeenews/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/8744f9fb-d696-4204-9795-5215ad930c39/main.m3u8
 #EXTINF:-1 tvg-id="TIMES NOW NAVBHARAT" tvg-logo="https://i.imgur.com/kSCozXg.png"  group-title="Hindi News",Times Now Navbharat
-https://restv4-as.ott.kaltura.com/api_v3/service/assetFile/action/playManifest/partnerId/487/assetId/1283530/assetType/media/assetFileId/15825341/contextType/PLAYBACK/isAltUrl/False/a.m3u8
+https://mumt03.tangotv.in/Dsly5z3HTIMESNOWNAVBHARAT/index.m3u8
