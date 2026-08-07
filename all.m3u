@@ -12,10 +12,10 @@ https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/6cd2f649739a45ca9de1daf81cc7d0f2/in
 #EXTINF:-1 tvg-id="ABPNews.in" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/ABP_News_logo.svg/512px-ABP_News_logo.svg.png" group-title="Hindi News",ABP News
 https://d1rc86nwwc9fag.cloudfront.net/vglive-sk-472500/abpnews/master.m3u8
 #EXTINF:-1 tvg-id="INDIA TV" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_INDIA_TV/images/LOGO_HD/image.png"  group-title="Hindi News",India TV
-https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/india-tv/master.m3u8
+https://pl-indiatvnews.akamaized.net/out/v1/db79179b608641ceaa5a4d0dd0dca8da/index.m3u8
 #EXTINF:-1 tvg-id="REPUBLICBHARAT" tvg-logo="https://www.examsegg.com/wp-content/uploads/2021/02/republic-bharat-logo-e1613310592185.jpg"  group-title="Hindi News",Republic Bharat
 https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/in/YuppTV/RepublicBharat.m3u8
 #EXTINF:-1 tvg-id="ZEE NEWS" tvg-logo="http://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/wdPs8bpF.png"  group-title="Hindi News",Zee News
 https://vg-zeefta.akamaized.net/ptnr-yupptv/title-zeenews/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/8744f9fb-d696-4204-9795-5215ad930c39/main.m3u8
 #EXTINF:-1 tvg-id="TIMES NOW NAVBHARAT" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Times-now-navbharat-Transparent.png"  group-title="Hindi News",Times Now Navbharat
-https://mumt03.tangotv.in/Dsly5z3HTIMESNOWNAVBHARAT/index.m3u8
+https://dztlhgid9me95.cloudfront.net/live-tv/Vidgyor/navbharat/navbharat_master.m3u8
